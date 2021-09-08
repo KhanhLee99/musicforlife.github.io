@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Untitled Document</title>
+<link rel="stylesheet" href="css/style.css" type="text/css">
+<script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
+</head>
+
+<body>
+<div class="theloai">
+       <a href="#" title="Mới & Hót" style="color:#06F; font-weight:bold"><img src="video/next.png" width="15" height="15">Mới & Hot</a>
+      <a href="#" title="Hàn Quốc"><img src="video/next.png" width="15" height="15">Hàn Quốc</a>
+      <a href="#" title="Clip Vui"><img src="video/next.png" width="15" height="15">Clip vui</a>
+      <a href="#" title="Giải Trí"><img src="video/next.png" width="15" height="15">Giải trí</a>
+      <a href="#" title="Việt Nam" ><img src="video/next.png" width="15" height="15" >Việt Nam</a>
+      <a href="#" title="Nhạc Hoa"><img src="video/next.png" width="15" height="15">Nhạc Hoa</a>
+      <a href="#" title="Hài Kịch"><img src="video/next.png" width="15" height="15">Hài kịch</a>
+      <a href="#" title="Âu Mỹ"><img src="video/next.png" width="15" height="15">Âu Mỹ</a>
+      <a href="#" title="Nhạc Nhật"><img src="video/next.png" width="15" height="15">Nhạc Nhật</a>
+      <a href="#" title="Phim"><img src="video/next.png" width="15" height="15">Phim</a>
+      </div>
+<div id="slider">
+    <div id='wrapper'>
+      
+        <div id="bigPic"> <img  src="images/sl1.jpg" alt="Hãy nói yêu em - Thùy Chi" /> <img src="images/sl11.jpg" alt="Thư chưa gửi anh - Hòa Minzy" /> <img src="images/sl5.jpg" alt="Cô bé mùa đông - Thùy Chi, Trung Quân Idol" /> <img src="images/sl12.jpg" alt="Thật bất ngờ - Trúc Nhân" /> <img src="images/sl7.jpg" alt="Hạnh phúc đó em không có - Lương Minh Trang" /> </div>
+        <ul id="thumbs">
+          <li class='active' rel='1'><img src="imgs/1.jpg" alt="" /></li>
+          <li rel='2'><img src="images/11.jpg" alt="" /></li>
+          <li rel='3'><img src="images/5.jpg" alt="" /></li>
+          <li rel='4'><img src="images/12.jpg" alt="" /></li>
+          <li rel='5'><img src="images/7.jpg" alt="" /></li>
+        </ul>
+      </div>
+      <script type="text/javascript">
+	var currentImage;
+    var currentIndex = -1;
+    var interval;
+    function showImage(index){
+        if(index < $('#bigPic img').length){
+        	var indexImage = $('#bigPic img')[index]
+            if(currentImage){   
+            	if(currentImage != indexImage ){
+                    $(currentImage).css('z-index',2);
+                    clearTimeout(myTimer);
+                    $(currentImage).fadeOut(250, function() {
+					    myTimer = setTimeout("showNext()", 3000);
+					    $(this).css({'display':'none','z-index':1})
+					});
+                }
+            }
+            $(indexImage).css({'display':'block', 'opacity':1});
+            currentImage = indexImage;
+            currentIndex = index;
+            $('#thumbs li').removeClass('active');
+            $($('#thumbs li')[index]).addClass('active');
+        }
+    }
+    
+    function showNext(){
+        var len = $('#bigPic img').length;
+        var next = currentIndex < (len-1) ? currentIndex + 1 : 0;
+        showImage(next);
+    }
+    
+    var myTimer;
+    
+    $(document).ready(function() {
+	    myTimer = setTimeout("showNext()", 3000);
+		showNext(); //loads first image
+        $('#thumbs li').bind('click',function(e){
+        	var count = $(this).attr('rel');
+        	showImage(parseInt(count)-1);
+        });
+	});
+    
+	
+	</script> 
+    </div>
+</body>
+</html>

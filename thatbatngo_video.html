@@ -1,0 +1,620 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="css/main.css" rel="stylesheet" type="text/css"
+	media="screen,print" />
+<link href="css/video.css" rel="stylesheet" type="text/css"/>
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+<title>Music4Life</title>
+<link href="http://vjs.zencdn.net/4.11/video-js.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/header.css"/>
+ <link rel="stylesheet" type="text/css" href="css/menu.css"/>
+ <link rel="stylesheet" type="text/css" href="css/footer.css"/>
+<script src="http://vjs.zencdn.net/4.11/video.js"></script>
+<script src="js/jquery.dataTables.min.js"></script>
+<script src="js/jquery-1.12.0.min.js"></script>
+<script src="js/bootstraap.min.js"></script>
+</head>
+<body>
+	<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '861536773969679',
+      xfbml      : true,
+      version    : 'v2.6'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+<!-- Header : Start -->
+        <div class="header">
+        	 <div class="logo">
+            	<a href="#"><img src="images/logo.png" width="120"></a>
+            </div>
+        	<div class="language">
+            	<div>Ngôn ngữ: </div>
+                <a href="#" title="Vienamese"><img style="height:20px"; width="25px" src="images/vietnam_texture.gif" alt="vn" /></a>
+                <a href="#" title="English"><img style="height:20px"; width="25px" src="images/en-flag.jpg" alt="en" /></a>
+            </div>
+            <div class="user">
+            	<img src="images/user.png" alt="imgUser" />
+                <a href="#">Đăng nhập</a>
+                <span>|</span>
+                <a href="#">Đăng ký</a>
+            </div>
+            <div class="search">
+            	<input class="searchInput" name="textSearch" type="text" placeholder="Tìm bài hát, video, playlist, ca sĩ"/>
+                <input class="seatchButton" name="buttonSearch" type="button" value="Tìm kiếm"/>
+            </div>
+           
+        </div>
+        <!-- Header : End -->
+          <!------------------------- Menu Left : Start -->
+        <div class="menuHeader">
+        	<div class="menuTop">
+            	<ul class="menuTopList" id="ListMenu">
+                
+                	<!----------- Index -->
+                	<li class="dropdown">
+                    	<a class="active_dropdown" href="trangchu.html" title="Trang chủ">Trang chủ</a>                        
+                    </li>
+                    
+                    <!----------- Bài Hát -->
+                    <li class="dropdown">
+                    	<a class="active_dropdown" href="baihat.html" title="Bài hát">Bài hát</a>                        
+                        <div class="dropdown_content">
+                        	<div class="dropdown_column">
+                            	<a href="baihat.html" title="Mới & Hót">Mới & hot</a>
+                                <a href="#" title="Nhạc Trẻ">Nhạc trẻ</a>
+                                <a href="#" title="Trữ Tình">Trữ tình</a>                          
+                             	<a href="#" title="Cách Mạng">Cách mạng</a>
+                             	<a href="#" title="Tiền Chiến">Tiền chiến</a>
+                             	<a href="#" title="Nhạc Trịnh">Nhạc Trịnh</a>
+                                <a href="#" title="Không lời">Không lời</a>
+                                <a href="#" title="Rap Việt">Rap Việt</a>
+                            </div>                                                                                        
+                            <div class="dropdown_column">
+                            	<a href="#" title="Thiếu Nhi">Thiếu nhi</a>
+                                <a href="#" title="Nhạc Việt">Nhạc Việt</a>
+                                <a href="#" title="Rock Việt">Rock Việt</a>
+                              
+                                <a href="#" title="Pop">Pop</a>
+                                <a href="#" title="Rock">Rock</a>
+                                <a href="#" title="Dance">Dance</a>
+                            </div>                                                                                           
+                            <div class="dropdown_column">
+                            	<a href="#" title="Blue/Jazz">Blue/Jazz</a>
+                                <a href="#" title="Country">Country</a>
+                                <a href="#" title="La Tinh">La Tinh</a>
+                                <a href="#" title="Indie">Indie</a>
+                                <a href="#" title="Hàn Quốc">Hàn Quốc</a>
+                                <a href="#" title="Nhạc Hoa">Nhạc Hoa</a>
+                                <a href="#" title="Nhạc Nhật">Nhạc Nhật</a>                            
+                            </div>                                                                                       
+                        </div>
+                    </li>
+                    
+                    <!----------- Playlist -->
+                    <li class="dropdown">
+                    	<a class="active_dropdown" href="playlist.html" title="Playlist">Playlist</a>
+                        <div class="dropdown_content">
+                        	<div class="dropdown_column">
+                            	<a href="playlist.html" title="Mới & Hót">Mới & hot</a>
+                                <a href="#" title="Cách Mạng">Cách mạng</a>
+                                <a href="#" title="Không Lời">Không lời</a>                          
+                             	<a href="#" title="Rock Việt">Rock Việt</a>
+                             	<a href="#" title="Nhạc Hoa">Nhạc Hoa</a>
+                            </div>                                                                                        
+                            <div class="dropdown_column">
+                            	<a href="#" title="Nhạc Trẻ">Nhạc trẻ</a>
+                                <a href="#" title="Tiền Chiến">Tiền chiến</a>
+                                <a href="#" title="Thiếu Nhi">Thiếu nhi</a>
+                                <a href="#" title="Âu Mỹ">Âu Mỹ</a>
+                                <a href="#" title="Nhạc Nhật">Nhạc Nhật</a>
+                            </div>                                                                                           
+                            <div class="dropdown_column">
+                            	<a href="#" title="Trữ Tình">Trữ tình</a>
+                                <a href="#" title="Nhạc Trịnh">Nhạc Trịnh</a>
+                                <a href="#" title="Rap Việt">Rap Việt</a>
+                                <a href="#" title="Hàn Quốc">Hàn Quốc</a>
+                             
+                            </div>                                                                                       
+                        </div>
+                    </li>
+                    
+                    <!----------- Video -->
+                    <li class="dropdown">
+                    	<a class="active_dropdown" href="video.html" title="Video" style="border-bottom:solid 4px #333;">Video</a>
+                        <div class="dropdown_content">
+                        	<div class="dropdown_column">
+                            	<a href="video.html" title="Mới & Hót">Mới & hot</a>
+                                <a href="#" title="Hàn Quốc">Hàn Quốc</a>
+                                <a href="#" title="Clip Vui">Clip vui</a>                          
+                             	<a href="#" title="Giải Trí Khác">Giải trí </a>
+                            </div>                                                                                        
+                            <div class="dropdown_column">
+                            	<a href="videovietnam.html" title="Việt Nam">Việt Nam</a>
+                                <a href="#" title="Nhạc Hoa">Nhạc Hoa</a>
+                                <a href="#" title="Hài Kịch">Hài kịch</a>
+                                
+                            </div>                                                                                           
+                            <div class="dropdown_column">
+                            	<a href="#" title="Âu Mỹ">Âu Mỹ</a>
+                                <a href="#" title="Nhạc Nhật">Nhạc Nhật</a>
+                                <a href="#" title="Phim">Phim</a>
+                            </div>                                                                                       
+                        </div>
+                    </li>
+                    
+                    <!---------- Bảng XH -->
+                    <li class="dropdown">
+                    	<a class="active_dropdown" href="BXH.html" title="Bảng xếp hạng">BXH</a>
+                        <div class="dropdown_content">
+                        	<a href="BXH.html" title="Việt Nam">Việt Nam</a>
+                            <a href="#" title="Âu Mỹ">Âu Mỹ</a>
+                            <a href="#" title="Trung Đông">Trung Đông</a>
+                            <a href="#" title="Phi Châu">Phi Châu</a>
+                        </div>
+                    </li>
+                   
+                    <!---------- Nghệ Sĩ -->
+                    <li class="dropdown">
+                    	<a class="active_dropdown" href="nghesi.html" title="Nghệ sĩ">Nghệ sĩ</a>
+                    </li>
+                </ul>
+            </div>
+            <!---------------------- Menu Left : End -->
+            
+            <!---------- Menu Right -->
+            <div class="menuRight">            	
+            	<a href="#" class="btt_star">Music4Life VIP</a>                
+                <a href="#" class="btt_music" title="Music4Life">Music For Life</a>                
+                <a href="#" class="btt_upload">Upload</a>               
+            </div>
+        </div>
+        <div class="clr"></div>
+        <!-- MenuHeader : End -->
+	<div id="main">
+         <!-- ket thuc menu-->
+       <!-- bat dau right-->
+	  <div id="right">
+		<div id="ads">
+		  <img src="video/qc.jpg"/>
+          <img src="video/qc2.png"/>
+		  </div>
+         <!-- bat dau xem tiep-->
+         <div id="xemtiep">
+         <h1>Xem tiếp</h1>
+         <li>
+         <a href="#"><img src="video/1449575203281_268.jpg"></a>
+         <h4>
+         <p><a href="#" class="tenvideo">Thật bất ngờ (BTS)</a></p>
+         <p><a href="#" class="tencasivideo">Trúc Nhân</a></p></br>
+         <p><img src="video/view.3060695ce533.png">17.392</p>
+         </h4>
+         </li>
+         <li>
+         <a href="#"><img src="video/khoidongcamxuc.jpg"></a>
+         <h4>
+         <p><a href="#" class="tenvideo">Khơi dòng cảm xúc</a></p>
+         <p><a href="#" class="tencasivideo">Trúc Nhân, </a><a href="#" class="tencasivideo">Quang Linh</a></p></br>
+         <p><img src="video/view.3060695ce533.png">24.251</p>
+         </h4>
+         </li>
+         <li>
+         <a href="#"><img src="video/bonchulam3.jpg"></a>
+         <h4>
+         <p><a href="#" class="tenvideo">Bốn chữ lắm</a></p>
+         <p><a href="#" class="tencasivideo">Trúc Nhân, </a>
+         <a href="#" class="tencasivideo">Trương Thảo Nhi</a></p></br>
+         <p><img src="video/view.3060695ce533.png">86.891</p>
+         </h4>
+         </li>
+          <li>
+         <a href="#"><img src="video/tuhaotrung.jpg"></a>
+         <h4>
+         <p><a href="#" class="tenvideo">Tự hào miền trung</a></p>
+         <p><a href="#" class="tencasivideo">Trúc Nhân, </a>
+         <a href="#" class="tencasivideo">Nguyễn Hải Phong</a></p></br>
+         <p><img src="video/view.3060695ce533.png">14.873</p>
+         </h4>
+         </li>
+          <li>
+         <a href="#"><img src="video/buongtaynhaura.jpg"></a>
+         <h4>
+         <p><a href="#" class="tenvideo">Buông đôi tay nhau ra</a></p>
+         <p><a href="#" class="tencasivideo">Sơn tùng MTP</a></p></br>
+         <p><img src="video/view.3060695ce533.png">3.126.334</p>
+         </h4>
+         </li>
+          <li>
+         <a href="#"><img src="video/goitenvietnam.jpg"></a>
+         <h4>
+         <p><a href="#" class="tenvideo">Gọi tên Việt Nam</a></p>
+         <p><a href="#" class="tencasivideo">Đan Trường</a></p></br>
+         <p><img src="video/view.3060695ce533.png">190.129</p>
+         </h4>
+         </li>
+          <li>
+         <a href="#"><img src="video/noidauminhanh.jpg"></a>
+         <h4>
+         <p><a href="#" class="tenvideo">Nỗi đau mình anh</a></p>
+         <p><a href="#" class="tencasivideo">Châu Khải Phong</a></p></br>
+         <p><img src="video/view.3060695ce533.png">492.251</p>
+         </h4>
+         </li>
+         <button type="button">Xem thêm</button>
+         </div>
+         <!-- ket thuc xem tiep-->
+         <div id="ads">
+		  <img src="video/qc11.jpg"/>
+          <img src="video/qc13.jpg"/>
+		  </div>
+		</div>
+        <!-- ket thuc right-->
+  <div id="content">
+   <!--bat dau video-->
+		<div id="video">
+            <video src="video/THAT BAT NGO.avi" controls="controls" autoplay="autoplay" width="850"></video>
+        <div class="noidungbaihat">
+        <div class="tencasi">
+        <p>Thật bất ngờ -</p>
+        <p><a href="#">Trúc Nhân</a></p>
+        </div>
+        
+        <div class="luotxem"><img src="video/headphone-icon.png">
+        <p>324.624</p>
+        </div>
+        
+        </div>
+        <!-- ket thuc noi dung bai hat-->
+        <div class="dichvu">
+        <div class="themtaishare">
+        <li><button type="button" data-toggle="collapse" data-target="#themvao" class="btn btn-primary"><img src="video/addlike.png">Thêm vào</button></li>
+        <li>
+        <button type="button" data-toggle="collapse" data-target="#taivideo" class="btn btn-primary"><img src="video/down.png">Tải Video</button>
+      </li>
+        <li><button type="button" data-toggle="collapse" data-target="#chiase" class="btn btn-primary"><img src="video/share.png">Chia sẻ</button></li>
+        <li><button type="button" data-toggle="collapse" data-target="#phanhoi" class="btn btn-primary"><img src="video/report.png">Phản hồi</button></li>
+        <!--Tải video-->
+        </div>
+        
+        <div class="dichvufacebook">
+        <div  data-share="true"  class="fb-like" data-width="50" data-show-faces="true">
+</div>
+        </div>
+        <!--ket thuc dich vu facebook-->
+        
+        </div>
+        <!--bat dau mo ta video-->
+        <div class="motavideo">
+        <div class="motanoidung">
+         <p>Video "Thật bất ngờ" do ca sĩ <a href="#">Trúc Nhân</a> thể hiện, thuộc thể loại <a href="#">Video Việt Nam</a>, <a href="#">Video Nhạc trẻ</a>. Các bạn có thể nghe, download MV/Video "Thật bất ngờ" miễn phí tại MusicForLife.com.</p></div>
+        <div class="motanguoidang">
+        <img src="video/user.jpg"><p>Upload bởi:</br><a href="#">herotran.qt</a></p>
+        </div>
+        </div>
+        <!--ket thuc mo ta video-->
+        <div  id="themvao" class="collapse">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+             <div class="x_panel">
+            <fieldset>
+                 <div class="x_content"> <br />
+                <form id="demo-form2" data-parsley-validate class="form-horizontal form-label-left">
+                 
+                     <div class="form-group">
+                    <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3" style="width:100%; float:right;">
+                         <p style="color:#000; text-align:center">Bạn đã thêm video vào trong Playlist</p>
+                       </div>
+                  </div>
+                   </form>
+              </div>
+               </fieldset>
+          </div>
+           </div>
+           </div>
+    
+        <!--Kết thuc tải video-->
+        <div  id="taivideo" class="collapse">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+             <div class="x_panel">
+            <fieldset>
+                 <div class="x_content"> <br />
+                <form id="demo-form2" data-parsley-validate class="form-horizontal form-label-left">
+                 
+                     <div class="form-group">
+                    <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3" style="width:100%; float:right;">
+                         <button type="submit" class="btn btn-primary" style="margin-left:20px; background-color:#06F; width:300px"><img src="video/down.png">Tải Video 480p</button>
+                        <button type="submit" class="btn btn-primary" style="margin-left:100px; background-color:#CCC; width:300px"><img src="video/down.png">Tải Video 720p</button>
+                       </div>
+                  </div>
+                   </form>
+              </div>
+               </fieldset>
+          </div>
+           </div>
+           </div>
+    
+        <!--Kết thuc tải video-->
+        <div  id="chiase" class="collapse">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+             <div class="x_panel">
+            <fieldset>
+                <div class="x_content"> <br />
+                     <div class="form-group">
+                    <label class="chiaselink" for="first-name"> Embed </label>
+                    <input class="linkembed" type="text" value="http://www.nhaccuatui.com/vh/auto/OCXcr8nCMop2G" >
+                       <span class="box-checkbox"><input type="radio" id="radioNormal" key="OCXcr8nCMop2G" rel="video" name="type_embed"><label for="radioNormal">Bình thường</label></span>
+                        <span class="box-checkbox"><input type="radio" id="radioNormal" key="OCXcr8nCMop2G" rel="video" name="type_embed"><label for="radioNormal">Tự động play</label></span>
+                         <span class="box-checkbox"><input type="radio" id="radioNormal" key="OCXcr8nCMop2G" rel="video" name="type_embed"><label for="radioNormal">Nhạc nền</label></span>
+                  </div>
+                    
+              </div>
+               </fieldset>
+          </div>
+           </div>
+           </div>
+    
+        <!--Kết thuc tải video-->
+        <div  id="phanhoi" class="collapse">
+        <div class="col-md-12 col-sm-12 col-xs-12" style="border:solid 1px #333">
+             <div class="x_panel">
+            <fieldset>
+                <div class="x_content"> <br />
+                     <div class="form-group">
+                       <span class="phanhoi_checkbox"><input type="radio" id="radioNormal" key="OCXcr8nCMop2G" rel="video" name="type_embed"><label for="radioNormal"><p>Không play được</p></label></span>
+                        <span class="phanhoi_checkbox"><input type="radio" id="radioNormal" key="OCXcr8nCMop2G" rel="video" name="type_embed"><label for="radioNormal"><p>Không tải được</p></label></span>
+                         <span class="phanhoi_checkbox"><input type="radio" id="radioNormal" key="OCXcr8nCMop2G" rel="video" name="type_embed"><label for="radioNormal"><p>Chất lượng kém</p></label></span>
+                         <span class="phanhoi_checkbox"><input type="radio" id="radioNormal" key="OCXcr8nCMop2G" rel="video" name="type_embed"><label for="radioNormal"><p>Lỗi khác</p></label></span>
+                          <button type="submit" class="btn btn-primary" style="margin-left:2
+                          0px; background-color:#06F; color:#FFF; font-weight:bold">Gửi báo lỗi</button>
+                  </div>
+                    
+              </div>
+               </fieldset>
+          </div>
+           </div>
+           </div>
+    
+        <!--Kết thuc tải video-->
+        </div>
+        <!--ket thuc dich vu-->
+         <div class="list_video">
+                    <div class="fram_select">
+                      <div class="tile_box_key">            
+                        <h2 class="title_of_box_video"><a title="Playlist | Album" href="http://www.nhaccuatui.com/video-am-nhac-viet-nam.html" onclick="_gaq.push(['_trackEvent', 'Video - MV', 'Click', 'Viet Nam']);">Playlist | Album ></a></h2>
+                        </div><!--@end div tile_box_key-->                
+                        <div class="video_list">
+                            
+                            <li>
+                                <div class="box_absolute_album">                    		
+                                    <a href="http://www.nhaccuatui.com/video/cause-i-love-you-noo-phuoc-thinh.V42OO50HHWD2U.html" class="img">
+                                   
+                                        
+                                        <img class="album_img" src="video/bonchulam.jpg">
+                                    </a>
+                                    
+                                </div>
+                                <h3><a href="#" class="name_song" title="Bốn chữ lắm - Trúc Nhân, Thảo Nhi">Bốn chữ lắm</a></h3>
+                                <h4><a href="#" class="name_singer" title="Trúc Nhân" target="_blank">Trúc Nhân, </a><a href="#" class="name_singer" title="Trương Thảo Nhi" target="_blank">Trương Thảo Nhi</a></h4>
+                            </li>
+                            
+                            <li>
+                                <div class="box_absolute_album">                    		
+                                    <a href="http://www.nhaccuatui.com/video/hay-tra-lai-anh-minh-vuong-m4u.DqLz4IGtbYuYk.html" class="img">
+                                       
+                                        <img class="album_img" src="video/muonkhocthatto.jpg">
+                                    </a>
+                                   
+                                </div>
+                                <h3><a href="#" class="name_song" title="Muốn khóc thật to">Muốn khóc thật to</a></h3>
+                                <h4><a href="http://www.nhaccuatui.com/nghe-si-minh-vuong-m4u.html" class="name_singer" title="Trúc Nhân" target="_blank">Trúc Nhân</a></h4>
+                            </li>
+                            
+                            <li>
+                                <div class="box_absolute_album">                    		
+                                    <a href="http://www.nhaccuatui.com/video/em-cu-di-di-khac-viet.MJ5yQDapxNZmJ.html" class="img">
+                                        
+                                        <img class="album_img" src="video/vetrucnhan.jpg">
+                                    </a>
+                                    
+                                </div>
+                                <h3><a href="#" class="name_song" title="Vẽ - Trúc Nhân">Vẽ</a></h3>
+                                <h4><a href="http://www.nhaccuatui.com/nghe-si-khac-viet.html" class="name_singer" title="Trúc Nhân" target="_blank">Trúc Nhân</a></h4>
+                            </li>
+                            
+                            <li>
+                                <div class="box_absolute_album">                    		
+                                    <a href="http://www.nhaccuatui.com/video/say-it-what-are-you-doing-cover-hau-due-mat-troi-ost-nam-cuong-ft-jis.bovzHVVqFZgoM.html" class="img">
+                                      
+                                        <img class="album_img" src="video/dongtrucnhan.jpg">
+                                    </a>
+                                   
+                                </div>
+                                <h3><a href="#" class="name_song" title="Đông - Trúc Nhân">Đông (Single)</a></h3>
+                                <h4><a href="#" class="name_singer" title="Trúc Nhân" target="_blank">Trúc Nhân</a></h4>
+                            </li>
+                            
+                            <li>
+                             
+                               
+                            
+                        </div>
+                    </div>    
+                </div>
+                <!--ket thuc list video-->
+                <div class="list_video">
+                    <div class="fram_select">
+                      <div class="tile_box_key">            
+                        <h2 class="title_of_box_video"><a title="Video | MV" href="http://www.nhaccuatui.com/video-am-nhac-viet-nam.html" onclick="_gaq.push(['_trackEvent', 'Video - MV', 'Click', 'Viet Nam']);">Video | MV ></a></h2>
+                        </div><!--@end div tile_box_key-->                
+                        <div class="video_list">
+                            
+                            <li>
+                                <div class="box_absolute">                    		
+                                    <a href="http://www.nhaccuatui.com/video/cause-i-love-you-noo-phuoc-thinh.V42OO50HHWD2U.html" class="img">
+                                    <span class="view_mv">
+                                    <span class="icon_view"></span><span id="NCTCounter_sg_4419843" wgct="1">310.445</span></span>
+                                        <span class="icon_play"></span>
+                                        <img class="mv_img" src="video/bonchulam2.jpg">
+                                    </a>
+                                    <span class="icon_time_video">06:11</span>
+                                </div>
+                                <h3><a href="#" class="name_song" title="4 Chữ lắm">Bốn chữ lắm</a></h3>
+                                <h4><a href="http://www.nhaccuatui.com/nghe-si-noo-phuoc-thinh.html" class="name_singer" title="Trúc Nhân" target="_blank">Trúc Nhân</a></h4>
+                            </li>
+                            
+                            <li>
+                                <div class="box_absolute">                    		
+                                    <a href="http://www.nhaccuatui.com/video/hay-tra-lai-anh-minh-vuong-m4u.DqLz4IGtbYuYk.html" class="img"><span class="view_mv"><span class="icon_view"></span><span id="NCTCounter_sg_4417228" wgct="1">184.732</span></span>
+                                        <span class="icon_play"></span>
+                                        <img class="mv_img" src="video/tuhaomientrung.jpg">
+                                    </a>
+                                    <span class="icon_time_video">07:04</span>
+                                </div>
+                                <h3><a href="http://www.nhaccuatui.com/video/hay-tra-lai-anh-minh-vuong-m4u.DqLz4IGtbYuYk.html" class="name_song" title="Tự hào miền trung">Tự hào miền trung</a></h3>
+                                <h4><a href="#" class="name_singer" title="Trúc Nhân" target="_blank">Trúc Nhân, </a><a href="#" class="name_singer" title="Nguyễn Hải Phong" target="_blank">Nguyễn Hải Phong</a></h4>
+                            </li>
+                            
+                            <li>
+                                <div class="box_absolute">                    		
+                                    <a href="http://www.nhaccuatui.com/video/em-cu-di-di-khac-viet.MJ5yQDapxNZmJ.html" class="img"><span class="view_mv"><span class="icon_view"></span><span id="NCTCounter_sg_4414470" wgct="1">166.360</span></span>
+                                        <span class="icon_play"></span>
+                                        <img class="mv_img" src="video/khoidongcamxuc.jpg">
+                                    </a>
+                                    <span class="icon_time_video">06:48</span>
+                                </div>
+                                <h3><a href="http://www.nhaccuatui.com/video/em-cu-di-di-khac-viet.MJ5yQDapxNZmJ.html" class="name_song" title="Khơi dòng cảm xúc">Khơi dòng cảm xúc</a></h3>
+                                <h4><a href="#" class="name_singer" title="Trúc Nhân" target="_blank">Trúc Nhân, </a><a href="#" class="name_singer" title="Quang Linh" target="_blank">Quang Linh</a></h4>
+                            </li>
+                            
+                            <li>
+                                <div class="box_absolute">                    		
+                                    <a href="http://www.nhaccuatui.com/video/say-it-what-are-you-doing-cover-hau-due-mat-troi-ost-nam-cuong-ft-jis.bovzHVVqFZgoM.html" class="img"><span class="view_mv"><span class="icon_view"></span><span id="NCTCounter_sg_4418239" wgct="1">83.097</span></span>
+                                        <span class="icon_play"></span>
+                                        <img class="mv_img" src="video/buongdoitaynhaura.jpg">
+                                    </a>
+                                    <span class="icon_time_video">03:36</span>
+                                </div>
+                                <h3><a href="#" class="name_song" title="Buông đôi tay nhau ra">Buông đôi tay nhau ra</a></h3>
+                                <h4><a href="#" class="name_singer" title="Sơn Tùng MTP" target="_blank">Sơn Tùng MTP, </a> <a href="#" class="name_singer" title="Cà Dễ Dãi" target="_blank">Cà Dễ Dãi</a></h4>
+                            </li>
+                            
+                            <li>
+                            </div>
+                    </div>    
+                </div>
+                <!--ket thuc list video--> 
+                <!--bat dau list cac bai hat-->
+                <div class="listbaihat">
+                <h2><a title="Bài hát" href="#">Bài hát ></a></h2>
+                 <li>
+                   <div class="item_content">
+                   <a href="thatbatngo_baihat.html" title="Thật bất ngờ" class="tenbaihat">Thật bất ngờ</a><a href="#" title="Trúc Nhân" class="tencasi"> - Trúc Nhân</a>
+                   </div>
+                   <div class="item_listen">
+                   <img src="video/Headphone.png"><p>13.242.245</p>
+                   </div>
+                   <div class="item_play">
+                   <a href="thatbatngo_baihat.html"><img src="video/Toolbar - Play.png"></a>
+                    <a href="#"><img src="video/addlove.png"></a>
+                   </div>
+                </li>
+                <li>
+                   <div class="item_content">
+                   <a href="#" title="Muốn Khóc Thật To" class="tenbaihat">Muốn khóc thật to</a><a href="#" title="Trúc Nhân" class="tencasi"> - Trúc Nhân</a>
+                   </div>
+                   <div class="item_listen">
+                   <img src="video/Headphone.png"><p>1.024.507</p>
+                   </div>
+                   <div class="item_play">
+                   <a href="#"><img src="video/Toolbar - Play.png"></a>
+                    <a href="#"><img src="video/addlove.png"></a>
+                   </div>
+                </li>
+                <li>
+                   <div class="item_content">
+                   <a href="#" title="Bốn Chữ Lắm" class="tenbaihat">Bốn chữ lắm</a><a href="#" title="Trúc Nhân" class="tencasi"> - Trúc Nhân</a><a href="#" title="Trương Thảo Nhi" class="tencasi">, Trương Thảo Nhi</a>
+                   </div>
+                   <div class="item_listen">
+                   <img src="video/Headphone.png"><p>1.002.521</p>
+                   </div>
+                   <div class="item_play">
+                   <a href="#"><img src="video/Toolbar - Play.png"></a>
+                    <a href="#"><img src="video/addlove.png"></a>
+                   </div>
+                </li>
+                <li>
+                   <div class="item_content">
+                   <a href="#" title="Em Là Vầng Trăng Của Anh" class="tenbaihat">Em là vầng trăng của anh</a><a href="#" title="Lâm Vũ" class="tencasi"> - Lâm Vũ</a>
+                   </div>
+                   <div class="item_listen">
+                   <img src="video/Headphone.png"><p>181.756</p>
+                   </div>
+                   <div class="item_play">
+                   <a href="#"><img src="video/Toolbar - Play.png"></a>
+                    <a href="#"><img src="video/addlove.png"></a>
+                   </div>
+                </li>
+                <li>
+                   <div class="item_content">
+                   <a href="#" title="Tất Cả Là Lỗi Của Anh" class="tenbaihat">Tất cả là lỗi của anh</a><a href="#" title="Đình Phong" class="tencasi"> - Đình Phong</a>
+                   </div>
+                   <div class="item_listen">
+                   <img src="video/Headphone.png"><p>124.245</p>
+                   </div>
+                   <div class="item_play">
+                   <a href="#"><img src="video/Toolbar - Play.png"></a>
+                    <a href="#"><img src="video/addlove.png"></a>
+                   </div>
+                </li>
+               <div class="quangcao"><img src="video/qcass.png"></div>
+                </div>
+                <!--ket thuc list cac bai hat-->
+                  <div class="binhluanvideo" style="clear:both">
+         <h1>Bình luận</h1>
+                <div class="fb-comments" data-href="http://music4life.azurewebsites.net/thatbatngo_video.html" data-colorscheme="light" data-numposts="10" data-width="800"></div>
+                </div>
+                </div>
+                <!-- ket thuc content-->
+        </div>
+ <!-- Footer -->
+        <div class="footer">
+        	<div class="foot1">
+            	
+            </div>
+            <div class="address">
+            	<div class="infor">
+                	<h2>Công ty TNHH Âm nhạc Bốn Thành Viên</h2>
+                    <p>Giấy CNĐKDN: 0308808576 - Ngày cấp: 16/10/2015, được sửa đổi lần thứ 15 ngày 16/11/2015. Cơ quan cấp: Phòng Đăng ký kinh doanh Sở Kế hoạch và Đầu tư TPHCM.</p>
+                    <p>Địa chỉ: Tầng trệt, Tòa nhà TroSV, số 9 P.Linh Trung, Q.Thủ Đức, TP.Hồ Chí Minh.</p>
+                    <p>Số điện thoại: 01629 286 679</p>
+                </div>
+                <div class="phone">
+                	<img src="Images/Blinklist-2-32.png" />
+                	<div class="note">
+                    	Gop y phan anh <br />
+                        <span>02346 467 110</span>
+                    </div>
+                    <div class="call">
+                    	Tu van mien phi <br />
+                        <span>0974 445 667</span>
+                    </div>
+                     <br />
+                    <div class="mail">
+                    	<p>Email: <a title="email">vuiqualavui@yahoo.com</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer : End-->
+</body>
+</html>

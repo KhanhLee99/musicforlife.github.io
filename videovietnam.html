@@ -1,0 +1,1234 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="css/main.css" rel="stylesheet" type="text/css"
+	media="screen,print" />
+<link href="css/listvideo.css" rel="stylesheet" type="text/css"/>
+<title>Music4Life</title>
+<link href="SpryAssets_AN/SpryTabbedPanels_VD.css" rel="stylesheet" type="text/css" />
+<link href="http://vjs.zencdn.net/4.11/video-js.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/header.css"/>
+ <link rel="stylesheet" type="text/css" href="css/menu.css"/>
+ <link rel="stylesheet" type="text/css" href="css/footer.css"/>
+<script src="SpryAssets_AN/SpryTabbedPanels.js" type="text/javascript"></script>
+<script src="http://vjs.zencdn.net/4.11/video.js"></script>
+</head>
+<body>
+	<!-- Header : Start -->
+        <div class="header">
+        	 <div class="logo">
+            	<a href="#"><img src="images/logo.png" width="120"></a>
+            </div>
+        	<div class="language">
+            	<div>Ngôn ngữ: </div>
+                <a href="#" title="Vienamese"><img style="height:20px"; width="25px" src="images/vietnam_texture.gif" alt="vn" /></a>
+                <a href="#" title="English"><img style="height:20px"; width="25px" src="images/en-flag.jpg" alt="en" /></a>
+            </div>
+            <div class="user">
+            	<img src="images/user.png" alt="imgUser" />
+                <a href="#">Đăng nhập</a>
+                <span>|</span>
+                <a href="#">Đăng ký</a>
+            </div>
+            <div class="search">
+            	<input class="searchInput" name="textSearch" type="text" placeholder="Tìm bài hát, video, playlist, ca sĩ"/>
+                <input class="seatchButton" name="buttonSearch" type="button" value="Tìm kiếm"/>
+            </div>
+           
+        </div>
+        <!-- Header : End -->
+           <!------------------------- Menu Left : Start -->
+        <div class="menuHeader">
+        	<div class="menuTop">
+            	<ul class="menuTopList" id="ListMenu">
+                
+                	<!----------- Index -->
+                	<li class="dropdown">
+                    	<a class="active_dropdown" href="trangchu.html" title="Trang chủ">Trang chủ</a>                        
+                    </li>
+                    
+                    <!----------- Bài Hát -->
+                    <li class="dropdown">
+                    	<a class="active_dropdown" href="baihat.html" title="Bài hát">Bài hát</a>                        
+                        <div class="dropdown_content">
+                        	<div class="dropdown_column">
+                            	<a href="baihat.html" title="Mới & Hót">Mới & hot</a>
+                                <a href="#" title="Nhạc Trẻ">Nhạc trẻ</a>
+                                <a href="#" title="Trữ Tình">Trữ tình</a>                          
+                             	<a href="#" title="Cách Mạng">Cách mạng</a>
+                             	<a href="#" title="Tiền Chiến">Tiền chiến</a>
+                             	<a href="#" title="Nhạc Trịnh">Nhạc Trịnh</a>
+                                <a href="#" title="Không lời">Không lời</a>
+                                <a href="#" title="Rap Việt">Rap Việt</a>
+                            </div>                                                                                        
+                            <div class="dropdown_column">
+                            	<a href="#" title="Thiếu Nhi">Thiếu nhi</a>
+                                <a href="#" title="Nhạc Việt">Nhạc Việt</a>
+                                <a href="#" title="Rock Việt">Rock Việt</a>
+                              
+                                <a href="#" title="Pop">Pop</a>
+                                <a href="#" title="Rock">Rock</a>
+                                <a href="#" title="Dance">Dance</a>
+                            </div>                                                                                           
+                            <div class="dropdown_column">
+                            	<a href="#" title="Blue/Jazz">Blue/Jazz</a>
+                                <a href="#" title="Country">Country</a>
+                                <a href="#" title="La Tinh">La Tinh</a>
+                                <a href="#" title="Indie">Indie</a>
+                                <a href="#" title="Hàn Quốc">Hàn Quốc</a>
+                                <a href="#" title="Nhạc Hoa">Nhạc Hoa</a>
+                                <a href="#" title="Nhạc Nhật">Nhạc Nhật</a>                            
+                            </div>                                                                                       
+                        </div>
+                    </li>
+                    
+                    <!----------- Playlist -->
+                    <li class="dropdown">
+                    	<a class="active_dropdown" href="playlist.html" title="Playlist">Playlist</a>
+                        <div class="dropdown_content">
+                        	<div class="dropdown_column">
+                            	<a href="playlist.html" title="Mới & Hót">Mới & hot</a>
+                                <a href="#" title="Cách Mạng">Cách mạng</a>
+                                <a href="#" title="Không Lời">Không lời</a>                          
+                             	<a href="#" title="Rock Việt">Rock Việt</a>
+                             	<a href="#" title="Nhạc Hoa">Nhạc Hoa</a>
+                            </div>                                                                                        
+                            <div class="dropdown_column">
+                            	<a href="#" title="Nhạc Trẻ">Nhạc trẻ</a>
+                                <a href="#" title="Tiền Chiến">Tiền chiến</a>
+                                <a href="#" title="Thiếu Nhi">Thiếu nhi</a>
+                                <a href="#" title="Âu Mỹ">Âu Mỹ</a>
+                                <a href="#" title="Nhạc Nhật">Nhạc Nhật</a>
+                            </div>                                                                                           
+                            <div class="dropdown_column">
+                            	<a href="#" title="Trữ Tình">Trữ tình</a>
+                                <a href="#" title="Nhạc Trịnh">Nhạc Trịnh</a>
+                                <a href="#" title="Rap Việt">Rap Việt</a>
+                                <a href="#" title="Hàn Quốc">Hàn Quốc</a>
+                             
+                            </div>                                                                                       
+                        </div>
+                    </li>
+                    
+                    <!----------- Video -->
+                    <li class="dropdown">
+                    	<a class="active_dropdown" href="video.html" title="Video" style="border-bottom:solid 4px #333;">Video</a>
+                        <div class="dropdown_content">
+                        	<div class="dropdown_column">
+                            	<a href="#" title="Mới & Hót">Mới & hot</a>
+                                <a href="#" title="Hàn Quốc">Hàn Quốc</a>
+                                <a href="#" title="Clip Vui">Clip vui</a>                          
+                             	<a href="#" title="Giải Trí Khác">Giải trí </a>
+                            </div>                                                                                        
+                            <div class="dropdown_column">
+                            	<a href="#" title="Việt Nam">Việt Nam</a>
+                                <a href="#" title="Nhạc Hoa">Nhạc Hoa</a>
+                                <a href="#" title="Hài Kịch">Hài kịch</a>
+                                
+                            </div>                                                                                           
+                            <div class="dropdown_column">
+                            	<a href="#" title="Âu Mỹ">Âu Mỹ</a>
+                                <a href="#" title="Nhạc Nhật">Nhạc Nhật</a>
+                                <a href="#" title="Phim">Phim</a>
+                            </div>                                                                                       
+                        </div>
+                    </li>
+                    
+                    <!---------- Bảng XH -->
+                    <li class="dropdown">
+                    	<a class="active_dropdown" href="BXH.html" title="Bảng xếp hạng">BXH</a>
+                        <div class="dropdown_content">
+                        	<a href="BXH.html" title="Việt Nam">Việt Nam</a>
+                            <a href="#" title="Âu Mỹ">Âu Mỹ</a>
+                            <a href="#" title="Trung Đông">Trung Đông</a>
+                            <a href="#" title="Phi Châu">Phi Châu</a>
+                        </div>
+                    </li>
+                   
+                    <!---------- Nghệ Sĩ -->
+                    <li class="dropdown">
+                    	<a class="active_dropdown" href="nghesi.html" title="Nghệ sĩ">Nghệ sĩ</a>
+                    </li>
+                </ul>
+            </div>
+            <!---------------------- Menu Left : End -->
+            
+            <!---------- Menu Right -->
+            <div class="menuRight">            	
+            	<a href="#" class="btt_star">Music4Life VIP</a>                
+                <a href="#" class="btt_music" title="Music4Life">Music For Life</a>                
+                <a href="#" class="btt_upload">Upload</a>               
+            </div>
+        </div>
+        <div class="clr"></div>
+        <!-- MenuHeader : End -->
+	<div id="main">
+   
+        <!--bat dau silde-->
+			
+        <!--ket thuc silde-->
+		<div id="right">
+			<div id="ads">
+				<img src="video/qceqq.jpg" width="280" alt="quang cao" />
+                <img src="video/qc12.png" width="280" alt="quang cao" />
+			</div>
+             <!--bat dau bang xep hang-->
+        <div id="bxh">
+        <h1>BXH MV ></h1>
+       <div id="TabbedPanels1" class="TabbedPanels">
+    <ul class="TabbedPanelsTabGroup">
+      <li class="TabbedPanelsTab" tabindex="0" style="border-top-left-radius:10px;border-bottom-left-radius:10px">V-POP</li>
+      <li class="TabbedPanelsTab" tabindex="0">K-POP</li>
+      <li class="TabbedPanelsTab" tabindex="0" style="border-top-right-radius:10px;border-bottom-right-radius:10px">ÂU-MỸ</li>
+    </ul>
+    <div class="TabbedPanelsContentGroup">
+      <div class="TabbedPanelsContent">
+      <ul>
+      <li class="first-item">
+      <a target="_blank" href="#" class="zthumb"><img src="video/noo.jpg" alt="Cause I Love You" width="270"></a>
+        <div class="des">
+        <span class="rank rank-01">01</span>
+        <h3 class="song-name ellipsis">
+        <a href="#" title="Vợ Người Ta - Phan Mạnh Quỳnh" class="txt-primary">Cause i love you</a></h3>
+        <h4 class="singer-name ellipsis">
+        <a href="http://mp3.zing.vn/nghe-si/Phan-Manh-Quynh#from=laban" title="Phan Mạnh Quỳnh" class="txt-info">Noo Phước Thịnh</a></h4>
+    </div>
+    <!-- END! des -->
+    <!-- END! bai 1 -->
+    <li>
+    <span class="rank rank-02">02</span>
+    <h3 class="song-name ellipsis"><a href="#" title="Em cứ đi đi" class="txt-primary">Em cứ đi đi</a></h3>
+    <h4 class="singer-name ellipsis"><a href="#" title="Khắc Việt" class="txt-info">Khắc Việt</a></h4>
+    </li>
+    <!-- END! bai 2 -->
+    <li>
+    <span class="rank rank-02">03</span>
+    <h3 class="song-name ellipsis"><a href="#" title="Hãy trả lại anh" class="txt-primary">Hãy trả lại anh</a></h3>
+    <h4 class="singer-name ellipsis"><a href="#" title="Minh Vương M4U" class="txt-info">Minh Vương M4U</a>
+    </h4>
+    </li>
+    <!-- END! bai 3 -->
+    <li>
+    <span class="rank rank-02">04</span>
+    <h3 class="song-name ellipsis"><a href="#" title="Lỗi ở yêu thương" class="txt-primary">Lỗi ở yêu thương</a></h3>
+    <h4 class="singer-name ellipsis"><a href="#" title="Thanh Duy" class="txt-info">Thanh Duy</a></h4>
+    </li>
+    <!-- END! bai 4 -->
+    <li>
+    <span class="rank rank-02">05</span>
+     <h3 class="song-name ellipsis"><a href="#" title="Anh sẽ đến bên em" class="txt-primary">Anh sẽ đến bên em</a></h3>
+    <h4 class="singer-name ellipsis"><a href="#" title="Anh Quân Idol" class="txt-info">Anh Quân Idol</a></h4>
+    </li>
+    <!-- END! bai 5 -->
+      <li>
+    <span class="rank rank-02">06</span>
+    <h3 class="song-name ellipsis"><a href="#" title="Em cứ đi đi" class="txt-primary">Em cứ đi đi</a></h3>
+    <h4 class="singer-name ellipsis"><a href="#" title="Khắc Việt" class="txt-info">Khắc Việt</a></h4>
+    </li>
+    <!-- END! bai 6 -->
+    <li>
+    <span class="rank rank-02">07</span>
+    <h3 class="song-name ellipsis"><a href="#" title="Hãy trả lại anh" class="txt-primary">Hãy trả lại anh</a></h3>
+    <h4 class="singer-name ellipsis"><a href="#" title="Minh Vương M4U" class="txt-info">Minh Vương M4U</a>
+    </h4>
+    </li>
+    <!-- END! bai 7 -->
+    <li>
+    <span class="rank rank-02">08</span>
+    <h3 class="song-name ellipsis"><a href="#" title="Lỗi ở yêu thương" class="txt-primary">Lỗi ở yêu thương</a></h3>
+    <h4 class="singer-name ellipsis"><a href="#" title="Thanh Duy" class="txt-info">Thanh Duy</a></h4>
+    </li>
+    <!-- END! bai 8 -->
+    <li>
+    <span class="rank rank-02">09</span>
+     <h3 class="song-name ellipsis"><a href="#" title="Anh sẽ đến bên em" class="txt-primary">Anh sẽ đến bên em</a></h3>
+    <h4 class="singer-name ellipsis"><a href="#" title="Anh Quân Idol" class="txt-info">Anh Quân Idol</a></h4>
+    </li>
+    <!-- END! bai 9 -->
+     <li>
+    <span class="rank rank-02">10</span>
+     <h3 class="song-name ellipsis"><a href="#" title="Anh sẽ đến bên em" class="txt-primary">Anh sẽ đến bên em</a></h3>
+    <h4 class="singer-name ellipsis"><a href="#" title="Anh Quân Idol" class="txt-info">Anh Quân Idol</a></h4>
+    </li>
+    <!-- END! bai 10 -->
+      </ul>
+      <div class="ui-footer">
+      <a href="BXH.html" class="pull-left">Xem đầy đủ</a>
+      <a href="BXH.html" class="pull-right">Nghe BXH 
+      <span class="icon-play-all"></span></a>
+      </div>
+      
+      </div>
+      <!-- END! content VPOP --> 
+      <div class="TabbedPanelsContent">
+      <ul>
+      <li class="first-item">
+      <a target="_blank" href="#" class="zthumb"><img src="video/fire.jpg" alt="Fire" width="270"></a>
+        <div class="des">
+        <span class="rank rank-01">01</span>
+        <h3 class="song-name ellipsis">
+        <a href="#" title="Fire" class="txt-primary">Fire</a></h3>
+        <h4 class="singer-name ellipsis">
+        <a href="#" title="BTS (Bangtan Boys)" class="txt-info">BTS (Bangtan Boys)</a>
+        </h4>
+    </div>
+    <!-- END! des -->
+    <!-- END! bai 1 -->
+    <li>
+    <span class="rank rank-02">02</span>
+    <h3 class="song-name ellipsis"><a href="http://mp3.zing.vn/bai-hat/My-Life-Jeong-Jun-Ha-Yoon-Sang/ZW7W98B8.jsp#from=laban" title="My Life -Jeong Jun Ha ft. Yoon Sang" class="txt-primary">My life</a></h3>
+    <h4 class="singer-name ellipsis"><a href="http://mp3.zing.vn/nghe-si/Jeong-Jun-Ha" title="Jeong Jun Ha" class="txt-info">Jeong Jun Ha</a>
+    <a href="http://mp3.zing.vn/nghe-si/Yoon-Sang" title="Yoon Sang" class="txt-info"> ft. Yoon Sang</a></h4>
+    </li>
+    <!-- END! bai 2 -->
+    <li>
+    <span class="rank rank-02">03</span>
+    <h3 class="song-name ellipsis"><a href="http://mp3.zing.vn/bai-hat/Wonderful-Barn-Jeong-Hyeong-Don-hyukoh/ZW7W98BA.jsp#from=laban" title="Wonderful Barn -Jeong Hyeong Don ft. Hyukoh" class="txt-primary">Wonderful barn</a></h3>
+    <h4 class="singer-name ellipsis"><a href="http://mp3.zing.vn/nghe-si/Jeong-Hyeong-Don" title="Jeong Hyeong Don" class="txt-info">Jeong Hyeong Don</a>
+    <a href="http://mp3.zing.vn/nghe-si/hyukoh" title="Hyukoh" class="txt-info">  ft. Hyukoh</a></h4>
+    </li>
+    <!-- END! bai 3 -->
+    <li>
+    <span class="rank rank-02">04</span>
+    <h3 class="song-name ellipsis"><a href="http://mp3.zing.vn/bai-hat/Dumb-Dumb-Red-Velvet/ZW7WB78U.jsp#from=laban" title="Dumb Dumb -Red Velvet" class="txt-primary">Dumb dumb</a></h3>
+    <h4 class="singer-name ellipsis"><a href="http://mp3.zing.vn/nghe-si/Red-Velvet" title="Red Velvet" class="txt-info">Red Velvet</a></h4>
+    </li>
+    <!-- END! bai 4 -->
+    <li>
+    <span class="rank rank-02">05</span>
+    <h3 class="song-name ellipsis"><a href="http://mp3.zing.vn/bai-hat/Lion-Heart-SNSD/ZW7W6DCO.jsp#from=laban" title="Lion Heart -SNSD" class="txt-primary">Lion heart</a></h3>
+    <h4 class="singer-name ellipsis"><a href="http://mp3.zing.vn/nghe-si/SNSD" title="SNSD" class="txt-info">SNSD</a></h4>
+    </li>
+    <!-- END! bai 5 -->
+       <li>
+    <span class="rank rank-02">06</span>
+    <h3 class="song-name ellipsis"><a href="http://mp3.zing.vn/bai-hat/My-Life-Jeong-Jun-Ha-Yoon-Sang/ZW7W98B8.jsp#from=laban" title="My Life -Jeong Jun Ha ft. Yoon Sang" class="txt-primary">My life</a></h3>
+    <h4 class="singer-name ellipsis"><a href="http://mp3.zing.vn/nghe-si/Jeong-Jun-Ha" title="Jeong Jun Ha" class="txt-info">Jeong Jun Ha</a>
+    <a href="http://mp3.zing.vn/nghe-si/Yoon-Sang" title="Yoon Sang" class="txt-info"> ft. Yoon Sang</a></h4>
+    </li>
+    <!-- END! bai 6 -->
+    <li>
+    <span class="rank rank-02">07</span>
+    <h3 class="song-name ellipsis"><a href="http://mp3.zing.vn/bai-hat/Wonderful-Barn-Jeong-Hyeong-Don-hyukoh/ZW7W98BA.jsp#from=laban" title="Wonderful Barn -Jeong Hyeong Don ft. Hyukoh" class="txt-primary">Wonderful barn</a></h3>
+    <h4 class="singer-name ellipsis"><a href="http://mp3.zing.vn/nghe-si/Jeong-Hyeong-Don" title="Jeong Hyeong Don" class="txt-info">Jeong Hyeong Don</a>
+    <a href="http://mp3.zing.vn/nghe-si/hyukoh" title="Hyukoh" class="txt-info">  ft. Hyukoh</a></h4>
+    </li>
+    <!-- END! bai 7 -->
+    <li>
+    <span class="rank rank-02">08</span>
+    <h3 class="song-name ellipsis"><a href="http://mp3.zing.vn/bai-hat/Dumb-Dumb-Red-Velvet/ZW7WB78U.jsp#from=laban" title="Dumb Dumb -Red Velvet" class="txt-primary">Dumb dumb</a></h3>
+    <h4 class="singer-name ellipsis"><a href="http://mp3.zing.vn/nghe-si/Red-Velvet" title="Red Velvet" class="txt-info">Red Velvet</a></h4>
+    </li>
+    <!-- END! bai 8 -->
+    <li>
+    <span class="rank rank-02">09</span>
+    <h3 class="song-name ellipsis"><a href="http://mp3.zing.vn/bai-hat/Lion-Heart-SNSD/ZW7W6DCO.jsp#from=laban" title="Lion Heart -SNSD" class="txt-primary">Lion heart</a></h3>
+    <h4 class="singer-name ellipsis"><a href="http://mp3.zing.vn/nghe-si/SNSD" title="SNSD" class="txt-info">SNSD</a></h4>
+    </li>
+    <!-- END! bai 9 -->
+     <li>
+    <span class="rank rank-02">10</span>
+    <h3 class="song-name ellipsis"><a href="http://mp3.zing.vn/bai-hat/Lion-Heart-SNSD/ZW7W6DCO.jsp#from=laban" title="Lion Heart -SNSD" class="txt-primary">Lion heart</a></h3>
+    <h4 class="singer-name ellipsis"><a href="http://mp3.zing.vn/nghe-si/SNSD" title="SNSD" class="txt-info">SNSD</a></h4>
+    </li>
+    <!-- END! bai 10 -->
+      </ul>
+      <div class="ui-footer">
+      <a href="http://mp3.zing.vn/bang-xep-hang/bai-hat-Han-Quoc/IWZ9Z0BO.jsp" class="pull-left">Xem đầy đủ</a>
+      <a href="http://mp3.zing.vn/album/Bang-Xep-Hang-Bai-Hat-Han-Quoc-Tuan-42-2015/ZWZCIU6O.jsp" class="pull-right">Nghe BXH
+      <span class="icon-play-all"></span></a>
+      </div>
+      
+      </div>
+      <!-- END! content K-POP --> 
+      <div class="TabbedPanelsContent">
+      <ul>
+      <li class="first-item">
+      <a target="_blank" href="#" class="zthumb"><img src="video/dontletmedown.jpg" alt="Don't Let Me Down" width="270"> </a>
+        <div class="des">
+        <span class="rank rank-01">01</span>
+        <h3 class="song-name ellipsis">
+        <a href="#" title="Don't Let Me Down" class="txt-primary">Don't let me down</a></h3>
+        <h4 class="singer-name ellipsis">
+        <a href="" title="The Chainsmokers" class="txt-info">The Chainsmokers, </a> <a href="" title="Daya" class="txt-info">Daya</a></h4>
+    </div>
+    <!-- END! des -->
+    <!-- END! bai 1 -->
+    <li>
+    <span class="rank rank-02">02</span>
+    <h3 class="song-name ellipsis"><a href="#" title="Faded" class="txt-primary">Faded</a></h3>
+    <h4 class="singer-name ellipsis"><a href="#" title="Alan Walker" class="txt-info">Alan Walker</a></h4>
+    </li>
+    <!-- END! bai 2 -->
+    <li>
+    <span class="rank rank-02">03</span>
+    <h3 class="song-name ellipsis"><a href="#" title="Hello Friday" class="txt-primary">Hello friday</a></h3>
+    <h4 class="singer-name ellipsis"><a href="#" title="Flo Rida" class="txt-info">Flo Rida, </a>
+    <a href="#" title="Jason Derulo" class="txt-info">Jason Derulo</a>
+    </h4>
+    </li>
+    <!-- END! bai 3 -->
+    <li>
+    <span class="rank rank-02">04</span>
+    <h3 class="song-name ellipsis"><a href="http://mp3.zing.vn/bai-hat/Watch-Me-Silento/ZW70FDA6.jsp#from=laban" title="Watch Me -Silento" class="txt-primary">Watch me</a></h3>
+    <h4 class="singer-name ellipsis"><a href="http://mp3.zing.vn/nghe-si/Silento" title="Silento" class="txt-info">Silento</a></h4>
+    </li>
+    <!-- END! bai 4 -->
+    <li>
+    <span class="rank rank-02">05</span>
+    <h3 class="song-name ellipsis"><a href="http://mp3.zing.vn/bai-hat/679-Fetty-Wap-Monty/ZW7IUU6C.jsp#from=laban" title="679 -Fetty Wap ft. Monty" class="txt-primary">679</a></h3>
+    <h4 class="singer-name ellipsis"><a href="http://mp3.zing.vn/nghe-si/Fetty-Wap" title="Fetty Wap" class="txt-info">Fetty Wap</a>
+    <a href="http://mp3.zing.vn/nghe-si/Monty" title="Monty" class="txt-info"> ft. Monty</a></h4>
+    </li>
+    <!-- END! bai 5 -->
+     <li>
+    <span class="rank rank-02">06</span>
+    <h3 class="song-name ellipsis"><a href="#" title="Faded" class="txt-primary">Faded</a></h3>
+    <h4 class="singer-name ellipsis"><a href="#" title="Alan Walker" class="txt-info">Alan Walker</a></h4>
+    </li>
+    <!-- END! bai 6 -->
+    <li>
+    <span class="rank rank-02">07</span>
+    <h3 class="song-name ellipsis"><a href="#" title="Hello Friday" class="txt-primary">Hello friday</a></h3>
+    <h4 class="singer-name ellipsis"><a href="#" title="Flo Rida" class="txt-info">Flo Rida, </a>
+    <a href="#" title="Jason Derulo" class="txt-info">Jason Derulo</a>
+    </h4>
+    </li>
+    <!-- END! bai 7 -->
+    <li>
+    <span class="rank rank-02">08</span>
+    <h3 class="song-name ellipsis"><a href="http://mp3.zing.vn/bai-hat/Watch-Me-Silento/ZW70FDA6.jsp#from=laban" title="Watch Me -Silento" class="txt-primary">Watch me</a></h3>
+    <h4 class="singer-name ellipsis"><a href="http://mp3.zing.vn/nghe-si/Silento" title="Silento" class="txt-info">Silento</a></h4>
+    </li>
+    <!-- END! bai 8 -->
+    <li>
+    <span class="rank rank-02">09</span>
+    <h3 class="song-name ellipsis"><a href="http://mp3.zing.vn/bai-hat/679-Fetty-Wap-Monty/ZW7IUU6C.jsp#from=laban" title="679 -Fetty Wap ft. Monty" class="txt-primary">679</a></h3>
+    <h4 class="singer-name ellipsis"><a href="http://mp3.zing.vn/nghe-si/Fetty-Wap" title="Fetty Wap" class="txt-info">Fetty Wap</a>
+    <a href="http://mp3.zing.vn/nghe-si/Monty" title="Monty" class="txt-info"> ft. Monty</a></h4>
+    </li>
+    <!-- END! bai 9 -->
+     <li>
+    <span class="rank rank-02">10</span>
+    <h3 class="song-name ellipsis"><a href="http://mp3.zing.vn/bai-hat/679-Fetty-Wap-Monty/ZW7IUU6C.jsp#from=laban" title="679 -Fetty Wap ft. Monty" class="txt-primary">679</a></h3>
+    <h4 class="singer-name ellipsis"><a href="http://mp3.zing.vn/nghe-si/Fetty-Wap" title="Fetty Wap" class="txt-info">Fetty Wap</a>
+    <a href="http://mp3.zing.vn/nghe-si/Monty" title="Monty" class="txt-info"> ft. Monty</a></h4>
+    </li>
+    <!-- END! bai 10 -->
+      </ul>
+      <div class="ui-footer">
+      <a href="http://mp3.zing.vn/bang-xep-hang/bai-hat-Viet-Nam/IWZ9Z08I.jsp" class="pull-left">Xem đầy đủ</a>
+      <a href="http://mp3.zing.vn/album/Bang-Xep-Hang-Bai-Hat-Viet-Nam-Tuan-42-2015/ZWZCIU6I.jsp" class="pull-right">Nghe BXH 
+      <span class="icon-play-all"></span></a>
+      </div>
+      
+      </div>
+      <!-- END! content ÂU MỸ -->
+      
+    </div>
+  </div>
+  <!-- END! tab âm nhac -->
+        <!--ket thuc bang xep hang-->
+        </div>
+        <div id="ads">
+				<img src="video/qca.jpg" width="280" alt="quang cao" />
+			</div>
+         <!--bat dau chu de hot-->
+       <div id="chudehot">
+       <h1>Chủ đề hot ></h1>
+       <li class="item_chude">
+       
+       <img src="video/chude1.jpg">
+       <a href="#">Nhạc sàn cực mạnh</a>
+       </li>
+        <li class="item_chude">
+       
+       <img src="video/chude2.jpg">
+       <a href="#">Nhạc vàng</a>
+       </li>
+        <li class="item_chude">
+       
+       <img src="video/chude3.jpg">
+       <a href="#">Tuyển tập EDM sôi động nhất</a>
+       </li>
+        <li class="item_chude">
+       
+       <img src="video/chude4.jpg">
+       <a href="#">Nhạc trữ tình chọn lọc</a>
+       </li>
+        <li class="item_chude">
+       
+       <img src="video/chude5.jpg">
+       <a href="#">FA và thất tình</a>
+       </li>
+       </div>
+        <!--ket thuc chu de hot-->
+         <!--bat dau nghe si-->
+       <div id="nghesi">
+       <h1>Nghệ sĩ ></h1>
+       <li class="item_nghesi">
+       
+       <img src="video/quangle.jpg">
+       <a href="#">Quang Lê</a>
+       </li>
+       <li class="item_nghesi">
+       
+       <img src="video/sontung.jpg">
+       <a href="#">Sơn Tùng MTP</a>
+       </li>
+        <li class="item_nghesi">
+       
+       <img src="video/toctien.jpg">
+       <a href="#">Tóc Tiên</a>
+       </li>
+       <li class="item_nghesi">
+       
+       <img src="video/noophuoctinh.jpg">
+       <a href="#">Noo Phước Thịnh</a>
+       </li>
+        <li class="item_nghesi">
+       
+       <img src="video/dongnhi.jpg">
+       <a href="#">Đông Nhi</a>
+       </li>
+       <li class="item_nghesi">
+       
+       <img src="video/bichphuong.jpg">
+       <a href="#">Bích Phương</a>
+       </li>
+        <li class="item_nghesi">
+       
+       <img src="video/chaukhai.jpg">
+       <a href="#">Châu Khải Phong</a>
+       </li>
+       <li class="item_nghesi">
+       
+       <img src="video/hoailam.jpg">
+       <a href="#">Hoài Lâm</a>
+       </li>
+       </div>
+        <!--ket thuc nghe si-->
+		</div>
+        
+        <!--ket thuc right-->
+		<div id="content">
+        <div class="theloai">
+       <a href="#" title="Mới & Hót" ><img src="video/next.png" width="15" height="15">Mới & hot</a>
+      <a href="#" title="Hàn Quốc"><img src="video/next.png" width="15" height="15">Hàn Quốc</a>
+      <a href="#" title="Clip Vui"><img src="video/next.png" width="15" height="15">Clip vui</a>
+      <a href="#" title="Giải Trí"><img src="video/next.png" width="15" height="15">Giải trí</a>
+      <a href="#" title="Việt Nam" style="color:#06F; font-weight:bold"><img src="video/next.png" width="15" height="15">Việt Nam</a>
+      <a href="#" title="Nhạc Hoa"><img src="video/next.png" width="15" height="15">Nhạc Hoa</a>
+      <a href="#" title="Hài Kịch"><img src="video/next.png" width="15" height="15">Hài kịch</a>
+      <a href="#" title="Âu Mỹ"><img src="video/next.png" width="15" height="15">Âu Mỹ</a>
+      <a href="#" title="Nhạc Nhật"><img src="video/next.png" width="15" height="15">Nhạc Nhật</a>
+      <a href="#" title="Phim"><img src="video/next.png" width="15" height="15">Phim</a>
+        </div>
+        <!-- ket thuc list the loai-->
+        <div class="theloaicon">
+        <a href="videonhactre.html">Nhạc trẻ</a>
+        <a href="#">Trữ tình</a>
+        <a href="#">Quê hương</a>
+        <a href="#">Cách mạng</a>
+        <a href="#">Thiếu nhi</a>
+        <a href="#">Rap Việt</a>
+        </div>
+			<div class="list_video">
+                    <div class="fram_select">
+                        <div class="tile_box_key">            
+                            <h2 class="title_of_box_video"><a title="Video Nhạc Trẻ" href="videonhactre.html">Video nhạc trẻ ></a></h2>
+                            
+                        </div><!--@end div tile_box_key-->                
+                        <div class="video_list">
+                            
+                            <li>
+                                <div class="box_absolute">                    		
+                                    <a href="thatbatngo.html" class="img" title="Thật bất ngờ - MV">
+                                    <span class="view_mv">
+                                    <span class="icon_view"></span><span id="NCTCounter_sg_4419843" wgct="1">324.623</span></span>
+                                        <span class="icon_play"></span>
+                                        <img src="imgs/12.jpg">
+                                    </a>
+                                    <span class="icon_time_video">08:25</span>
+                                </div>
+                                <h3><a href="thatbatngo_video.html" class="name_song" title="Thật bất ngờ - MV">Thật bất ngờ</a></h3>
+                                <h4><a href="#" class="name_singer" title="Trúc Nhân" target="_blank">Trúc Nhân</a></h4>
+                            </li>
+                            
+                            <li>
+                                <div class="box_absolute">                    		
+                                    <a href="http://www.nhaccuatui.com/video/hay-tra-lai-anh-minh-vuong-m4u.DqLz4IGtbYuYk.html" class="img"><span class="view_mv"><span class="icon_view"></span><span id="NCTCounter_sg_4417228" wgct="1">184.732</span></span>
+                                        <span class="icon_play"></span>
+                                        <img src="http://avatar.nct.nixcdn.com/mv/2016/04/26/2/d/9/4/1461635431489_640.jpg" data-src="http://avatar.nct.nixcdn.com/mv/2016/04/26/2/d/9/4/1461635431489_640.jpg">
+                                    </a>
+                                    <span class="icon_time_video">07:04</span>
+                                </div>
+                                <h3><a href="http://www.nhaccuatui.com/video/hay-tra-lai-anh-minh-vuong-m4u.DqLz4IGtbYuYk.html" class="name_song" title="Hãy Trả Lại Anh - Minh Vương M4U">Hãy trả lại anh</a></h3>
+                                <h4><a href="http://www.nhaccuatui.com/nghe-si-minh-vuong-m4u.html" class="name_singer" title="Tìm các bài hát, playlist, mv do ca sĩ Minh Vương M4U trình bày" target="_blank">Minh Vương M4U</a></h4>
+                            </li>
+                            
+                            <li>
+                                <div class="box_absolute">                    		
+                                    <a href="http://www.nhaccuatui.com/video/em-cu-di-di-khac-viet.MJ5yQDapxNZmJ.html" class="img"><span class="view_mv"><span class="icon_view"></span><span id="NCTCounter_sg_4414470" wgct="1">166.360</span></span>
+                                        <span class="icon_play"></span>
+                                        <img src="http://avatar.nct.nixcdn.com/mv/2016/05/01/3/c/7/e/1462112399682_640.jpg" data-src="http://avatar.nct.nixcdn.com/mv/2016/05/01/3/c/7/e/1462112399682_640.jpg">
+                                    </a>
+                                    <span class="icon_time_video">06:48</span>
+                                </div>
+                                <h3><a href="http://www.nhaccuatui.com/video/em-cu-di-di-khac-viet.MJ5yQDapxNZmJ.html" class="name_song" title="Em Cứ Đi Đi - Khắc Việt">Em cứ đi đi</a></h3>
+                                <h4><a href="http://www.nhaccuatui.com/nghe-si-khac-viet.html" class="name_singer" title="Tìm các bài hát, playlist, mv do ca sĩ Khắc Việt trình bày" target="_blank">Khắc Việt</a></h4>
+                            </li>
+                            
+                            <li>
+                                <div class="box_absolute">                    		
+                                    <a href="http://www.nhaccuatui.com/video/say-it-what-are-you-doing-cover-hau-due-mat-troi-ost-nam-cuong-ft-jis.bovzHVVqFZgoM.html" class="img"><span class="view_mv"><span class="icon_view"></span><span id="NCTCounter_sg_4418239" wgct="1">83.097</span></span>
+                                        <span class="icon_play"></span>
+                                        <img src="http://avatar.nct.nixcdn.com/mv/2016/04/26/2/d/9/4/1461659712872_640.jpg" data-src="http://avatar.nct.nixcdn.com/mv/2016/04/26/2/d/9/4/1461659712872_640.jpg">
+                                    </a>
+                                    <span class="icon_time_video">03:36</span>
+                                </div>
+                                <h3><a href="http://www.nhaccuatui.com/video/say-it-what-are-you-doing-cover-hau-due-mat-troi-ost-nam-cuong-ft-jis.bovzHVVqFZgoM.html" class="name_song" title="Say It! What Are You Doing - Nam Cường, Jis">Say it! What are you doing</a></h3>
+                                <h4><a href="http://www.nhaccuatui.com/nghe-si-nam-cuong.html" class="name_singer" title="Tìm các bài hát, playlist, mv do ca sĩ Nam Cường trình bày" target="_blank">Nam Cường, </a> <a href="http://www.nhaccuatui.com/tim-kiem?q=Jis&amp;b=singer" class="name_singer" title="Tìm các bài hát, playlist, mv do ca sĩ Jis trình bày" target="_blank">Jis</a></h4>
+                            </li>
+                            
+                            <li>
+                                <div class="box_absolute">                    		
+                                    <a href="http://www.nhaccuatui.com/video/me-anh-nhac-em-trung-tu.6HCjglqjv3oZ3.html" class="img"><span class="view_mv"><span class="icon_view"></span><span id="NCTCounter_sg_4429279" wgct="1">2.531</span></span>
+                                        <span class="icon_play"></span>
+                                        <img src="http://avatar.nct.nixcdn.com/mv/2016/05/04/5/b/7/e/1462325816593_640.jpg" data-src="http://avatar.nct.nixcdn.com/mv/2016/05/04/5/b/7/e/1462325816593_640.jpg">
+                                    </a>
+                                    <span class="icon_time_video">04:39</span>
+                              </div>
+                                <h3><a href="http://www.nhaccuatui.com/video/me-anh-nhac-em-trung-tu.6HCjglqjv3oZ3.html" class="name_song" title="Mẹ Anh Nhắc Em - Trung Tự">Mẹ anh nhắc em</a></h3>
+                                <h4><a href="http://www.nhaccuatui.com/tim-kiem?q=Trung+T%E1%BB%B1&amp;b=singer" class="name_singer" title="Tìm các bài hát, playlist, mv do ca sĩ Trung Tự trình bày" target="_blank">Trung Tự</a></h4>
+                            </li>
+                            
+                            <li>
+                                <div class="box_absolute">                    		
+                                    <a href="http://www.nhaccuatui.com/video/im-lang-va-ra-di-ca-ra-o-ke-khanh-phuong-ft-anh-quan-idol-ft-ca-de-dai.qo0lsxFXrZcu0.html" class="img"><span class="view_mv"><span class="icon_view"></span><span id="NCTCounter_sg_4429709" wgct="1">112</span></span>
+                                        <span class="icon_play"></span>
+                                        <img src="http://avatar.nct.nixcdn.com/mv/2016/05/04/5/b/7/e/1462337942339_640.jpg" data-src="http://avatar.nct.nixcdn.com/mv/2016/05/04/5/b/7/e/1462337942339_640.jpg">
+                                    </a>
+                                    <span class="icon_time_video">04:30</span>
+                                </div>
+                                <h3><a href="http://www.nhaccuatui.com/video/im-lang-va-ra-di-ca-ra-o-ke-khanh-phuong-ft-anh-quan-idol-ft-ca-de-dai.qo0lsxFXrZcu0.html" class="name_song" title="Im Lặng Và Ra Đi (Cà Ra Ô Kê) - Khánh Phương, Anh Quân Idol, Cà Dễ Dãi">Im lặng và ra đi </a></h3>
+                                <h4><a href="http://www.nhaccuatui.com/nghe-si-khanh-phuong.html" class="name_singer" title="Tìm các bài hát, playlist, mv do ca sĩ Khánh Phương trình bày" target="_blank">Khánh Phương, </a> <a href="http://www.nhaccuatui.com/nghe-si-anh-quan-idol.html" class="name_singer" title="Tìm các bài hát, playlist, mv do ca sĩ Anh Quân Idol trình bày" target="_blank">Anh Quân Idol, </a> <a href="http://www.nhaccuatui.com/nghe-si-cadedai.html" class="name_singer" title="Tìm các bài hát, playlist, mv do ca sĩ Cà Dễ Dãi trình bày" target="_blank">Cà Dễ Dãi</a></h4>
+                            </li>
+                            
+                            <li>
+                                <div class="box_absolute">                    		
+                                    <a href="http://www.nhaccuatui.com/video/ngay-em-xa-que-vong-eo-56-ost-thuy-chi.B2pBC4Ul51OzD.html" class="img"><span class="view_mv"><span class="icon_view"></span><span id="NCTCounter_sg_4396936" wgct="1">247.428</span></span>
+                                        <span class="icon_play"></span>
+                                        <img src="http://avatar.nct.nixcdn.com/mv/2016/04/15/0/1/4/8/1460705880446_640.jpg" data-src="http://avatar.nct.nixcdn.com/mv/2016/04/15/0/1/4/8/1460705880446_640.jpg">
+                                    </a>
+                                    <span class="icon_time_video">03:47</span>
+                                </div>
+                                <h3><a href="http://www.nhaccuatui.com/video/ngay-em-xa-que-vong-eo-56-ost-thuy-chi.B2pBC4Ul51OzD.html" class="name_song" title="Ngày Em Xa Quê (Vòng Eo 56 OST) - Thùy Chi">Ngày em xa quê</a></h3>
+                                <h4><a href="http://www.nhaccuatui.com/nghe-si-thuy-chi.html" class="name_singer" title="Tìm các bài hát, playlist, mv do ca sĩ Thùy Chi trình bày" target="_blank">Thùy Chi</a></h4>
+                            </li>
+                            
+                            <li>
+                                <div class="box_absolute">                    		
+                                    <a href="http://www.nhaccuatui.com/video/sao-phai-phuc-tap-trong-hieu-idol-ft-karik.xsXzWKvjpxahs.html" class="img"><span class="view_mv"><span class="icon_view"></span><span id="NCTCounter_sg_4418293" wgct="1">40.198</span></span>
+                                        <span class="icon_play"></span>
+                                        <img src="http://avatar.nct.nixcdn.com/mv/2016/04/26/2/d/9/4/1461666064016_640.jpg" data-src="http://avatar.nct.nixcdn.com/mv/2016/04/26/2/d/9/4/1461666064016_640.jpg">
+                                    </a>
+                                    <span class="icon_time_video">03:56</span>
+                                </div>
+                                <h3><a href="http://www.nhaccuatui.com/video/sao-phai-phuc-tap-trong-hieu-idol-ft-karik.xsXzWKvjpxahs.html" class="name_song" title="Sao Phải Phức Tạp - Trọng Hiếu Idol, Karik">Sao phải phức tạp</a></h3>
+                                <h4><a href="http://www.nhaccuatui.com/nghe-si-trong-hieu-idol.html" class="name_singer" title="Tìm các bài hát, playlist, mv do ca sĩ Trọng Hiếu Idol trình bày" target="_blank">Trọng Hiếu Idol, </a> <a href="http://www.nhaccuatui.com/nghe-si-karik.html" class="name_singer" title="Tìm các bài hát, playlist, mv do ca sĩ Karik trình bày" target="_blank">Karik</a></h4>
+                            </li>
+                            
+                        </div>
+                    </div>    
+                </div>
+                <!--ket thuc list video-->
+                <div class="list_video">
+                    <div class="fram_select">
+                        <div class="tile_box_key">            
+                            <h2 class="title_of_box_video"><a title="Video Trữ Tình" href="#">Video Trữ tình ></a></h2>
+                            
+                        </div><!--@end div tile_box_key-->                
+                        <div class="video_list">
+                            
+                            <li>
+                                <div class="box_absolute">                    		
+                                    <a href="http://www.nhaccuatui.com/video/cause-i-love-you-noo-phuoc-thinh.V42OO50HHWD2U.html" class="img">
+                                    <span class="view_mv">
+                                    <span class="icon_view"></span><span id="NCTCounter_sg_4419843" wgct="1">310.445</span></span>
+                                        <span class="icon_play"></span>
+                                        <img src="http://avatar.nct.nixcdn.com/mv/2016/04/28/f/f/e/b/1461816372987_640.jpg" data-src="http://avatar.nct.nixcdn.com/mv/2016/04/28/f/f/e/b/1461816372987_640.jpg">
+                                    </a>
+                                    <span class="icon_time_video">06:11</span>
+                                </div>
+                                <h3><a href="http://www.nhaccuatui.com/video/cause-i-love-you-noo-phuoc-thinh.V42OO50HHWD2U.html" class="name_song" title="Cause I Love You - Noo Phước Thịnh">Cause i love you</a></h3>
+                                <h4><a href="http://www.nhaccuatui.com/nghe-si-noo-phuoc-thinh.html" class="name_singer" title="Tìm các bài hát, playlist, mv do ca sĩ Noo Phước Thịnh trình bày" target="_blank">Noo Phước Thịnh</a></h4>
+                            </li>
+                            
+                            <li>
+                                <div class="box_absolute">                    		
+                                    <a href="http://www.nhaccuatui.com/video/hay-tra-lai-anh-minh-vuong-m4u.DqLz4IGtbYuYk.html" class="img"><span class="view_mv"><span class="icon_view"></span><span id="NCTCounter_sg_4417228" wgct="1">184.732</span></span>
+                                        <span class="icon_play"></span>
+                                        <img src="http://avatar.nct.nixcdn.com/mv/2016/04/26/2/d/9/4/1461635431489_640.jpg" data-src="http://avatar.nct.nixcdn.com/mv/2016/04/26/2/d/9/4/1461635431489_640.jpg">
+                                    </a>
+                                    <span class="icon_time_video">07:04</span>
+                                </div>
+                                <h3><a href="http://www.nhaccuatui.com/video/hay-tra-lai-anh-minh-vuong-m4u.DqLz4IGtbYuYk.html" class="name_song" title="Hãy Trả Lại Anh - Minh Vương M4U">Hãy trả lại anh</a></h3>
+                                <h4><a href="http://www.nhaccuatui.com/nghe-si-minh-vuong-m4u.html" class="name_singer" title="Tìm các bài hát, playlist, mv do ca sĩ Minh Vương M4U trình bày" target="_blank">Minh Vương M4U</a></h4>
+                            </li>
+                            
+                            <li>
+                                <div class="box_absolute">                    		
+                                    <a href="http://www.nhaccuatui.com/video/em-cu-di-di-khac-viet.MJ5yQDapxNZmJ.html" class="img"><span class="view_mv"><span class="icon_view"></span><span id="NCTCounter_sg_4414470" wgct="1">166.360</span></span>
+                                        <span class="icon_play"></span>
+                                        <img src="http://avatar.nct.nixcdn.com/mv/2016/05/01/3/c/7/e/1462112399682_640.jpg" data-src="http://avatar.nct.nixcdn.com/mv/2016/05/01/3/c/7/e/1462112399682_640.jpg">
+                                    </a>
+                                    <span class="icon_time_video">06:48</span>
+                                </div>
+                                <h3><a href="http://www.nhaccuatui.com/video/em-cu-di-di-khac-viet.MJ5yQDapxNZmJ.html" class="name_song" title="Em Cứ Đi Đi - Khắc Việt">Em cứ đi đi</a></h3>
+                                <h4><a href="http://www.nhaccuatui.com/nghe-si-khac-viet.html" class="name_singer" title="Tìm các bài hát, playlist, mv do ca sĩ Khắc Việt trình bày" target="_blank">Khắc Việt</a></h4>
+                            </li>
+                            
+                            <li>
+                                <div class="box_absolute">                    		
+                                    <a href="http://www.nhaccuatui.com/video/say-it-what-are-you-doing-cover-hau-due-mat-troi-ost-nam-cuong-ft-jis.bovzHVVqFZgoM.html" class="img"><span class="view_mv"><span class="icon_view"></span><span id="NCTCounter_sg_4418239" wgct="1">83.097</span></span>
+                                        <span class="icon_play"></span>
+                                        <img src="http://avatar.nct.nixcdn.com/mv/2016/04/26/2/d/9/4/1461659712872_640.jpg" data-src="http://avatar.nct.nixcdn.com/mv/2016/04/26/2/d/9/4/1461659712872_640.jpg">
+                                    </a>
+                                    <span class="icon_time_video">03:36</span>
+                                </div>
+                                <h3><a href="http://www.nhaccuatui.com/video/say-it-what-are-you-doing-cover-hau-due-mat-troi-ost-nam-cuong-ft-jis.bovzHVVqFZgoM.html" class="name_song" title="Say It! What Are You Doing - Nam Cường, Jis">Say it! What are you doing</a></h3>
+                                <h4><a href="http://www.nhaccuatui.com/nghe-si-nam-cuong.html" class="name_singer" title="Tìm các bài hát, playlist, mv do ca sĩ Nam Cường trình bày" target="_blank">Nam Cường, </a> <a href="http://www.nhaccuatui.com/tim-kiem?q=Jis&amp;b=singer" class="name_singer" title="Tìm các bài hát, playlist, mv do ca sĩ Jis trình bày" target="_blank">Jis</a></h4>
+                            </li>
+                            
+                            <li>
+                              <div class="box_absolute">                    		
+                                    <a href="http://www.nhaccuatui.com/video/me-anh-nhac-em-trung-tu.6HCjglqjv3oZ3.html" class="img"><span class="view_mv"><span class="icon_view"></span><span id="NCTCounter_sg_4429279" wgct="1">2.531</span></span>
+                                        <span class="icon_play"></span>
+                                        <img src="http://avatar.nct.nixcdn.com/mv/2016/05/04/5/b/7/e/1462325816593_640.jpg" data-src="http://avatar.nct.nixcdn.com/mv/2016/05/04/5/b/7/e/1462325816593_640.jpg">
+                                    </a>
+                                    <span class="icon_time_video">04:39</span>
+                              </div>
+                                <h3><a href="http://www.nhaccuatui.com/video/me-anh-nhac-em-trung-tu.6HCjglqjv3oZ3.html" class="name_song" title="Mẹ Anh Nhắc Em - Trung Tự">Mẹ anh nhắc em</a></h3>
+                                <h4><a href="http://www.nhaccuatui.com/tim-kiem?q=Trung+T%E1%BB%B1&amp;b=singer" class="name_singer" title="Tìm các bài hát, playlist, mv do ca sĩ Trung Tự trình bày" target="_blank">Trung Tự</a></h4>
+                            </li>
+                            
+                            <li>
+                                <div class="box_absolute">                    		
+                                    <a href="http://www.nhaccuatui.com/video/im-lang-va-ra-di-ca-ra-o-ke-khanh-phuong-ft-anh-quan-idol-ft-ca-de-dai.qo0lsxFXrZcu0.html" class="img"><span class="view_mv"><span class="icon_view"></span><span id="NCTCounter_sg_4429709" wgct="1">112</span></span>
+                                        <span class="icon_play"></span>
+                                        <img src="http://avatar.nct.nixcdn.com/mv/2016/05/04/5/b/7/e/1462337942339_640.jpg" data-src="http://avatar.nct.nixcdn.com/mv/2016/05/04/5/b/7/e/1462337942339_640.jpg">
+                                    </a>
+                                    <span class="icon_time_video">04:30</span>
+                                </div>
+                                <h3><a href="http://www.nhaccuatui.com/video/im-lang-va-ra-di-ca-ra-o-ke-khanh-phuong-ft-anh-quan-idol-ft-ca-de-dai.qo0lsxFXrZcu0.html" class="name_song" title="Im Lặng Và Ra Đi (Cà Ra Ô Kê) - Khánh Phương, Anh Quân Idol, Cà Dễ Dãi">Im lặng và ra đi</a></h3>
+                                <h4><a href="http://www.nhaccuatui.com/nghe-si-khanh-phuong.html" class="name_singer" title="Tìm các bài hát, playlist, mv do ca sĩ Khánh Phương trình bày" target="_blank">Khánh Phương, </a> <a href="http://www.nhaccuatui.com/nghe-si-anh-quan-idol.html" class="name_singer" title="Tìm các bài hát, playlist, mv do ca sĩ Anh Quân Idol trình bày" target="_blank">Anh Quân Idol, </a> <a href="http://www.nhaccuatui.com/nghe-si-cadedai.html" class="name_singer" title="Tìm các bài hát, playlist, mv do ca sĩ Cà Dễ Dãi trình bày" target="_blank">Cà Dễ Dãi</a></h4>
+                            </li>
+                            
+                            <li>
+                                <div class="box_absolute">                    		
+                                    <a href="http://www.nhaccuatui.com/video/ngay-em-xa-que-vong-eo-56-ost-thuy-chi.B2pBC4Ul51OzD.html" class="img"><span class="view_mv"><span class="icon_view"></span><span id="NCTCounter_sg_4396936" wgct="1">247.428</span></span>
+                                        <span class="icon_play"></span>
+                                        <img src="http://avatar.nct.nixcdn.com/mv/2016/04/15/0/1/4/8/1460705880446_640.jpg" data-src="http://avatar.nct.nixcdn.com/mv/2016/04/15/0/1/4/8/1460705880446_640.jpg">
+                                    </a>
+                                    <span class="icon_time_video">03:47</span>
+                                </div>
+                                <h3><a href="http://www.nhaccuatui.com/video/ngay-em-xa-que-vong-eo-56-ost-thuy-chi.B2pBC4Ul51OzD.html" class="name_song" title="Ngày Em Xa Quê (Vòng Eo 56 OST) - Thùy Chi">Ngày em xa quê</a></h3>
+                                <h4><a href="http://www.nhaccuatui.com/nghe-si-thuy-chi.html" class="name_singer" title="Tìm các bài hát, playlist, mv do ca sĩ Thùy Chi trình bày" target="_blank">Thùy Chi</a></h4>
+                            </li>
+                            
+                            <li>
+                                <div class="box_absolute">                    		
+                                    <a href="http://www.nhaccuatui.com/video/sao-phai-phuc-tap-trong-hieu-idol-ft-karik.xsXzWKvjpxahs.html" class="img"><span class="view_mv"><span class="icon_view"></span><span id="NCTCounter_sg_4418293" wgct="1">40.198</span></span>
+                                        <span class="icon_play"></span>
+                                        <img src="http://avatar.nct.nixcdn.com/mv/2016/04/26/2/d/9/4/1461666064016_640.jpg" data-src="http://avatar.nct.nixcdn.com/mv/2016/04/26/2/d/9/4/1461666064016_640.jpg">
+                                    </a>
+                                    <span class="icon_time_video">03:56</span>
+                                </div>
+                                <h3><a href="http://www.nhaccuatui.com/video/sao-phai-phuc-tap-trong-hieu-idol-ft-karik.xsXzWKvjpxahs.html" class="name_song" title="Sao Phải Phức Tạp - Trọng Hiếu Idol, Karik">Sao phải phức tạp</a></h3>
+                                <h4><a href="http://www.nhaccuatui.com/nghe-si-trong-hieu-idol.html" class="name_singer" title="Tìm các bài hát, playlist, mv do ca sĩ Trọng Hiếu Idol trình bày" target="_blank">Trọng Hiếu Idol, </a> <a href="http://www.nhaccuatui.com/nghe-si-karik.html" class="name_singer" title="Tìm các bài hát, playlist, mv do ca sĩ Karik trình bày" target="_blank">Karik</a></h4>
+                            </li>
+                            
+                        </div>
+                    </div>    
+                </div>
+                <!--ket thuc list video-->
+                <div class="list_video">
+                    <div class="fram_select">
+                      <div class="tile_box_key">            
+                        <h2 class="title_of_box_video"><a title="Video Quê Hương" href="#">Video Quê Hương ></a></h2>
+                        </div><!--@end div tile_box_key-->                
+                        <div class="video_list">
+                            
+                            <li>
+                                <div class="box_absolute">                    		
+                                    <a href="http://www.nhaccuatui.com/video/cause-i-love-you-noo-phuoc-thinh.V42OO50HHWD2U.html" class="img">
+                                    <span class="view_mv">
+                                    <span class="icon_view"></span><span id="NCTCounter_sg_4419843" wgct="1">310.445</span></span>
+                                        <span class="icon_play"></span>
+                                        <img src="http://avatar.nct.nixcdn.com/mv/2016/04/28/f/f/e/b/1461816372987_640.jpg" data-src="http://avatar.nct.nixcdn.com/mv/2016/04/28/f/f/e/b/1461816372987_640.jpg">
+                                    </a>
+                                    <span class="icon_time_video">06:11</span>
+                                </div>
+                                <h3><a href="http://www.nhaccuatui.com/video/cause-i-love-you-noo-phuoc-thinh.V42OO50HHWD2U.html" class="name_song" title="Cause I Love You - Noo Phước Thịnh">Cause i love you</a></h3>
+                                <h4><a href="http://www.nhaccuatui.com/nghe-si-noo-phuoc-thinh.html" class="name_singer" title="Tìm các bài hát, playlist, mv do ca sĩ Noo Phước Thịnh trình bày" target="_blank">Noo Phước Thịnh</a></h4>
+                            </li>
+                            
+                            <li>
+                                <div class="box_absolute">                    		
+                                    <a href="http://www.nhaccuatui.com/video/hay-tra-lai-anh-minh-vuong-m4u.DqLz4IGtbYuYk.html" class="img"><span class="view_mv"><span class="icon_view"></span><span id="NCTCounter_sg_4417228" wgct="1">184.732</span></span>
+                                        <span class="icon_play"></span>
+                                        <img src="http://avatar.nct.nixcdn.com/mv/2016/04/26/2/d/9/4/1461635431489_640.jpg" data-src="http://avatar.nct.nixcdn.com/mv/2016/04/26/2/d/9/4/1461635431489_640.jpg">
+                                    </a>
+                                    <span class="icon_time_video">07:04</span>
+                                </div>
+                                <h3><a href="http://www.nhaccuatui.com/video/hay-tra-lai-anh-minh-vuong-m4u.DqLz4IGtbYuYk.html" class="name_song" title="Hãy Trả Lại Anh - Minh Vương M4U">Hãy trả lại anh</a></h3>
+                                <h4><a href="http://www.nhaccuatui.com/nghe-si-minh-vuong-m4u.html" class="name_singer" title="Tìm các bài hát, playlist, mv do ca sĩ Minh Vương M4U trình bày" target="_blank">Minh Vương M4U</a></h4>
+                            </li>
+                            
+                            <li>
+                                <div class="box_absolute">                    		
+                                    <a href="http://www.nhaccuatui.com/video/em-cu-di-di-khac-viet.MJ5yQDapxNZmJ.html" class="img"><span class="view_mv"><span class="icon_view"></span><span id="NCTCounter_sg_4414470" wgct="1">166.360</span></span>
+                                        <span class="icon_play"></span>
+                                        <img src="http://avatar.nct.nixcdn.com/mv/2016/05/01/3/c/7/e/1462112399682_640.jpg" data-src="http://avatar.nct.nixcdn.com/mv/2016/05/01/3/c/7/e/1462112399682_640.jpg">
+                                    </a>
+                                    <span class="icon_time_video">06:48</span>
+                                </div>
+                                <h3><a href="http://www.nhaccuatui.com/video/em-cu-di-di-khac-viet.MJ5yQDapxNZmJ.html" class="name_song" title="Em Cứ Đi Đi - Khắc Việt">Em cứ đi đi</a></h3>
+                                <h4><a href="http://www.nhaccuatui.com/nghe-si-khac-viet.html" class="name_singer" title="Tìm các bài hát, playlist, mv do ca sĩ Khắc Việt trình bày" target="_blank">Khắc Việt</a></h4>
+                            </li>
+                            
+                            <li>
+                                <div class="box_absolute">                    		
+                                    <a href="http://www.nhaccuatui.com/video/say-it-what-are-you-doing-cover-hau-due-mat-troi-ost-nam-cuong-ft-jis.bovzHVVqFZgoM.html" class="img"><span class="view_mv"><span class="icon_view"></span><span id="NCTCounter_sg_4418239" wgct="1">83.097</span></span>
+                                        <span class="icon_play"></span>
+                                        <img src="http://avatar.nct.nixcdn.com/mv/2016/04/26/2/d/9/4/1461659712872_640.jpg" data-src="http://avatar.nct.nixcdn.com/mv/2016/04/26/2/d/9/4/1461659712872_640.jpg">
+                                    </a>
+                                    <span class="icon_time_video">03:36</span>
+                                </div>
+                                <h3><a href="http://www.nhaccuatui.com/video/say-it-what-are-you-doing-cover-hau-due-mat-troi-ost-nam-cuong-ft-jis.bovzHVVqFZgoM.html" class="name_song" title="Say It! What Are You Doing - Nam Cường, Jis">Say it! What are you doing</a></h3>
+                                <h4><a href="http://www.nhaccuatui.com/nghe-si-nam-cuong.html" class="name_singer" title="Tìm các bài hát, playlist, mv do ca sĩ Nam Cường trình bày" target="_blank">Nam Cường, </a> <a href="http://www.nhaccuatui.com/tim-kiem?q=Jis&amp;b=singer" class="name_singer" title="Tìm các bài hát, playlist, mv do ca sĩ Jis trình bày" target="_blank">Jis</a></h4>
+                            </li>
+                            
+                            <li>
+                              <div class="box_absolute">                    		
+                                    <a href="http://www.nhaccuatui.com/video/me-anh-nhac-em-trung-tu.6HCjglqjv3oZ3.html" class="img"><span class="view_mv"><span class="icon_view"></span><span id="NCTCounter_sg_4429279" wgct="1">2.531</span></span>
+                                        <span class="icon_play"></span>
+                                        <img src="http://avatar.nct.nixcdn.com/mv/2016/05/04/5/b/7/e/1462325816593_640.jpg" data-src="http://avatar.nct.nixcdn.com/mv/2016/05/04/5/b/7/e/1462325816593_640.jpg">
+                                    </a>
+                                    <span class="icon_time_video">04:39</span>
+                              </div>
+                                <h3><a href="http://www.nhaccuatui.com/video/me-anh-nhac-em-trung-tu.6HCjglqjv3oZ3.html" class="name_song" title="Mẹ Anh Nhắc Em - Trung Tự">Mẹ anh nhắc em</a></h3>
+                                <h4><a href="http://www.nhaccuatui.com/tim-kiem?q=Trung+T%E1%BB%B1&amp;b=singer" class="name_singer" title="Tìm các bài hát, playlist, mv do ca sĩ Trung Tự trình bày" target="_blank">Trung Tự</a></h4>
+                            </li>
+                            
+                            <li>
+                                <div class="box_absolute">                    		
+                                    <a href="http://www.nhaccuatui.com/video/im-lang-va-ra-di-ca-ra-o-ke-khanh-phuong-ft-anh-quan-idol-ft-ca-de-dai.qo0lsxFXrZcu0.html" class="img"><span class="view_mv"><span class="icon_view"></span><span id="NCTCounter_sg_4429709" wgct="1">112</span></span>
+                                        <span class="icon_play"></span>
+                                        <img src="http://avatar.nct.nixcdn.com/mv/2016/05/04/5/b/7/e/1462337942339_640.jpg" data-src="http://avatar.nct.nixcdn.com/mv/2016/05/04/5/b/7/e/1462337942339_640.jpg">
+                                    </a>
+                                    <span class="icon_time_video">04:30</span>
+                                </div>
+                                <h3><a href="http://www.nhaccuatui.com/video/im-lang-va-ra-di-ca-ra-o-ke-khanh-phuong-ft-anh-quan-idol-ft-ca-de-dai.qo0lsxFXrZcu0.html" class="name_song" title="Im Lặng Và Ra Đi (Cà Ra Ô Kê) - Khánh Phương, Anh Quân Idol, Cà Dễ Dãi">Im lặng và ra đi</a></h3>
+                                <h4><a href="http://www.nhaccuatui.com/nghe-si-khanh-phuong.html" class="name_singer" title="Tìm các bài hát, playlist, mv do ca sĩ Khánh Phương trình bày" target="_blank">Khánh Phương, </a> <a href="http://www.nhaccuatui.com/nghe-si-anh-quan-idol.html" class="name_singer" title="Tìm các bài hát, playlist, mv do ca sĩ Anh Quân Idol trình bày" target="_blank">Anh Quân Idol, </a> <a href="http://www.nhaccuatui.com/nghe-si-cadedai.html" class="name_singer" title="Tìm các bài hát, playlist, mv do ca sĩ Cà Dễ Dãi trình bày" target="_blank">Cà Dễ Dãi</a></h4>
+                            </li>
+                            
+                            <li>
+                                <div class="box_absolute">                    		
+                                    <a href="http://www.nhaccuatui.com/video/ngay-em-xa-que-vong-eo-56-ost-thuy-chi.B2pBC4Ul51OzD.html" class="img"><span class="view_mv"><span class="icon_view"></span><span id="NCTCounter_sg_4396936" wgct="1">247.428</span></span>
+                                        <span class="icon_play"></span>
+                                        <img src="http://avatar.nct.nixcdn.com/mv/2016/04/15/0/1/4/8/1460705880446_640.jpg" data-src="http://avatar.nct.nixcdn.com/mv/2016/04/15/0/1/4/8/1460705880446_640.jpg">
+                                    </a>
+                                    <span class="icon_time_video">03:47</span>
+                                </div>
+                                <h3><a href="http://www.nhaccuatui.com/video/ngay-em-xa-que-vong-eo-56-ost-thuy-chi.B2pBC4Ul51OzD.html" class="name_song" title="Ngày Em Xa Quê (Vòng Eo 56 OST) - Thùy Chi">Ngày em xa quê</a></h3>
+                                <h4><a href="http://www.nhaccuatui.com/nghe-si-thuy-chi.html" class="name_singer" title="Tìm các bài hát, playlist, mv do ca sĩ Thùy Chi trình bày" target="_blank">Thùy Chi</a></h4>
+                            </li>
+                            
+                            <li>
+                                <div class="box_absolute">                    		
+                                    <a href="http://www.nhaccuatui.com/video/sao-phai-phuc-tap-trong-hieu-idol-ft-karik.xsXzWKvjpxahs.html" class="img"><span class="view_mv"><span class="icon_view"></span><span id="NCTCounter_sg_4418293" wgct="1">40.198</span></span>
+                                        <span class="icon_play"></span>
+                                        <img src="http://avatar.nct.nixcdn.com/mv/2016/04/26/2/d/9/4/1461666064016_640.jpg" data-src="http://avatar.nct.nixcdn.com/mv/2016/04/26/2/d/9/4/1461666064016_640.jpg">
+                                    </a>
+                                    <span class="icon_time_video">03:56</span>
+                                </div>
+                                <h3><a href="http://www.nhaccuatui.com/video/sao-phai-phuc-tap-trong-hieu-idol-ft-karik.xsXzWKvjpxahs.html" class="name_song" title="Sao Phải Phức Tạp - Trọng Hiếu Idol, Karik">Sao phải phức tạp</a></h3>
+                                <h4><a href="http://www.nhaccuatui.com/nghe-si-trong-hieu-idol.html" class="name_singer" title="Tìm các bài hát, playlist, mv do ca sĩ Trọng Hiếu Idol trình bày" target="_blank">Trọng Hiếu Idol, </a> <a href="http://www.nhaccuatui.com/nghe-si-karik.html" class="name_singer" title="Tìm các bài hát, playlist, mv do ca sĩ Karik trình bày" target="_blank">Karik</a></h4>
+                            </li>
+                            
+                        </div>
+                    </div>    
+                </div>
+                <!--ket thuc list video--> 
+                <div class="list_video">
+                    <div class="fram_select">
+                      <div class="tile_box_key">            
+                        <h2 class="title_of_box_video"><a title="Video Cách Mạng" href="#">Video Cách mạng ></a></h2>
+                        </div><!--@end div tile_box_key-->                
+                        <div class="video_list">
+                            
+                            <li>
+                                <div class="box_absolute">                    		
+                                    <a href="http://www.nhaccuatui.com/video/cause-i-love-you-noo-phuoc-thinh.V42OO50HHWD2U.html" class="img">
+                                    <span class="view_mv">
+                                    <span class="icon_view"></span><span id="NCTCounter_sg_4419843" wgct="1">310.445</span></span>
+                                        <span class="icon_play"></span>
+                                        <img src="http://avatar.nct.nixcdn.com/mv/2016/04/28/f/f/e/b/1461816372987_640.jpg" data-src="http://avatar.nct.nixcdn.com/mv/2016/04/28/f/f/e/b/1461816372987_640.jpg">
+                                    </a>
+                                    <span class="icon_time_video">06:11</span>
+                                </div>
+                                <h3><a href="http://www.nhaccuatui.com/video/cause-i-love-you-noo-phuoc-thinh.V42OO50HHWD2U.html" class="name_song" title="Cause I Love You - Noo Phước Thịnh">Cause i love you</a></h3>
+                                <h4><a href="http://www.nhaccuatui.com/nghe-si-noo-phuoc-thinh.html" class="name_singer" title="Tìm các bài hát, playlist, mv do ca sĩ Noo Phước Thịnh trình bày" target="_blank">Noo Phước Thịnh</a></h4>
+                            </li>
+                            
+                            <li>
+                                <div class="box_absolute">                    		
+                                    <a href="http://www.nhaccuatui.com/video/hay-tra-lai-anh-minh-vuong-m4u.DqLz4IGtbYuYk.html" class="img"><span class="view_mv"><span class="icon_view"></span><span id="NCTCounter_sg_4417228" wgct="1">184.732</span></span>
+                                        <span class="icon_play"></span>
+                                        <img src="http://avatar.nct.nixcdn.com/mv/2016/04/26/2/d/9/4/1461635431489_640.jpg" data-src="http://avatar.nct.nixcdn.com/mv/2016/04/26/2/d/9/4/1461635431489_640.jpg">
+                                    </a>
+                                    <span class="icon_time_video">07:04</span>
+                                </div>
+                                <h3><a href="http://www.nhaccuatui.com/video/hay-tra-lai-anh-minh-vuong-m4u.DqLz4IGtbYuYk.html" class="name_song" title="Hãy Trả Lại Anh - Minh Vương M4U">Hãy trả lại anh</a></h3>
+                                <h4><a href="http://www.nhaccuatui.com/nghe-si-minh-vuong-m4u.html" class="name_singer" title="Tìm các bài hát, playlist, mv do ca sĩ Minh Vương M4U trình bày" target="_blank">Minh Vương M4U</a></h4>
+                            </li>
+                            
+                            <li>
+                                <div class="box_absolute">                    		
+                                    <a href="http://www.nhaccuatui.com/video/em-cu-di-di-khac-viet.MJ5yQDapxNZmJ.html" class="img"><span class="view_mv"><span class="icon_view"></span><span id="NCTCounter_sg_4414470" wgct="1">166.360</span></span>
+                                        <span class="icon_play"></span>
+                                        <img src="http://avatar.nct.nixcdn.com/mv/2016/05/01/3/c/7/e/1462112399682_640.jpg" data-src="http://avatar.nct.nixcdn.com/mv/2016/05/01/3/c/7/e/1462112399682_640.jpg">
+                                    </a>
+                                    <span class="icon_time_video">06:48</span>
+                                </div>
+                                <h3><a href="http://www.nhaccuatui.com/video/em-cu-di-di-khac-viet.MJ5yQDapxNZmJ.html" class="name_song" title="Em Cứ Đi Đi - Khắc Việt">Em cứ đi đi</a></h3>
+                                <h4><a href="http://www.nhaccuatui.com/nghe-si-khac-viet.html" class="name_singer" title="Tìm các bài hát, playlist, mv do ca sĩ Khắc Việt trình bày" target="_blank">Khắc Việt</a></h4>
+                            </li>
+                            
+                            <li>
+                                <div class="box_absolute">                    		
+                                    <a href="http://www.nhaccuatui.com/video/say-it-what-are-you-doing-cover-hau-due-mat-troi-ost-nam-cuong-ft-jis.bovzHVVqFZgoM.html" class="img"><span class="view_mv"><span class="icon_view"></span><span id="NCTCounter_sg_4418239" wgct="1">83.097</span></span>
+                                        <span class="icon_play"></span>
+                                        <img src="http://avatar.nct.nixcdn.com/mv/2016/04/26/2/d/9/4/1461659712872_640.jpg" data-src="http://avatar.nct.nixcdn.com/mv/2016/04/26/2/d/9/4/1461659712872_640.jpg">
+                                    </a>
+                                    <span class="icon_time_video">03:36</span>
+                                </div>
+                                <h3><a href="http://www.nhaccuatui.com/video/say-it-what-are-you-doing-cover-hau-due-mat-troi-ost-nam-cuong-ft-jis.bovzHVVqFZgoM.html" class="name_song" title="Say It! What Are You Doing - Nam Cường, Jis">Say it! What are you doing</a></h3>
+                                <h4><a href="http://www.nhaccuatui.com/nghe-si-nam-cuong.html" class="name_singer" title="Tìm các bài hát, playlist, mv do ca sĩ Nam Cường trình bày" target="_blank">Nam Cường, </a> <a href="http://www.nhaccuatui.com/tim-kiem?q=Jis&amp;b=singer" class="name_singer" title="Tìm các bài hát, playlist, mv do ca sĩ Jis trình bày" target="_blank">Jis</a></h4>
+                            </li>
+                            
+                            <li>
+                                <div class="box_absolute">                    		
+                                    <a href="http://www.nhaccuatui.com/video/me-anh-nhac-em-trung-tu.6HCjglqjv3oZ3.html" class="img"><span class="view_mv"><span class="icon_view"></span><span id="NCTCounter_sg_4429279" wgct="1">2.531</span></span>
+                                        <span class="icon_play"></span>
+                                        <img src="http://avatar.nct.nixcdn.com/mv/2016/05/04/5/b/7/e/1462325816593_640.jpg" data-src="http://avatar.nct.nixcdn.com/mv/2016/05/04/5/b/7/e/1462325816593_640.jpg">
+                                    </a>
+                                    <span class="icon_time_video">04:39</span>
+                              </div>
+                                <h3><a href="http://www.nhaccuatui.com/video/me-anh-nhac-em-trung-tu.6HCjglqjv3oZ3.html" class="name_song" title="Mẹ Anh Nhắc Em - Trung Tự">Mẹ anh nhắc em</a></h3>
+                                <h4><a href="http://www.nhaccuatui.com/tim-kiem?q=Trung+T%E1%BB%B1&amp;b=singer" class="name_singer" title="Tìm các bài hát, playlist, mv do ca sĩ Trung Tự trình bày" target="_blank">Trung Tự</a></h4>
+                            </li>
+                            
+                            <li>
+                                <div class="box_absolute">                    		
+                                    <a href="http://www.nhaccuatui.com/video/im-lang-va-ra-di-ca-ra-o-ke-khanh-phuong-ft-anh-quan-idol-ft-ca-de-dai.qo0lsxFXrZcu0.html" class="img"><span class="view_mv"><span class="icon_view"></span><span id="NCTCounter_sg_4429709" wgct="1">112</span></span>
+                                        <span class="icon_play"></span>
+                                        <img src="http://avatar.nct.nixcdn.com/mv/2016/05/04/5/b/7/e/1462337942339_640.jpg" data-src="http://avatar.nct.nixcdn.com/mv/2016/05/04/5/b/7/e/1462337942339_640.jpg">
+                                    </a>
+                                    <span class="icon_time_video">04:30</span>
+                                </div>
+                                <h3><a href="http://www.nhaccuatui.com/video/im-lang-va-ra-di-ca-ra-o-ke-khanh-phuong-ft-anh-quan-idol-ft-ca-de-dai.qo0lsxFXrZcu0.html" class="name_song" title="Im Lặng Và Ra Đi (Cà Ra Ô Kê) - Khánh Phương, Anh Quân Idol, Cà Dễ Dãi">Im lặng và ra đi</a></h3>
+                                <h4><a href="http://www.nhaccuatui.com/nghe-si-khanh-phuong.html" class="name_singer" title="Tìm các bài hát, playlist, mv do ca sĩ Khánh Phương trình bày" target="_blank">Khánh Phương, </a> <a href="http://www.nhaccuatui.com/nghe-si-anh-quan-idol.html" class="name_singer" title="Tìm các bài hát, playlist, mv do ca sĩ Anh Quân Idol trình bày" target="_blank">Anh Quân Idol, </a> <a href="http://www.nhaccuatui.com/nghe-si-cadedai.html" class="name_singer" title="Tìm các bài hát, playlist, mv do ca sĩ Cà Dễ Dãi trình bày" target="_blank">Cà Dễ Dãi</a></h4>
+                            </li>
+                            
+                            <li>
+                                <div class="box_absolute">                    		
+                                    <a href="http://www.nhaccuatui.com/video/ngay-em-xa-que-vong-eo-56-ost-thuy-chi.B2pBC4Ul51OzD.html" class="img"><span class="view_mv"><span class="icon_view"></span><span id="NCTCounter_sg_4396936" wgct="1">247.428</span></span>
+                                        <span class="icon_play"></span>
+                                        <img src="http://avatar.nct.nixcdn.com/mv/2016/04/15/0/1/4/8/1460705880446_640.jpg" data-src="http://avatar.nct.nixcdn.com/mv/2016/04/15/0/1/4/8/1460705880446_640.jpg">
+                                    </a>
+                                    <span class="icon_time_video">03:47</span>
+                                </div>
+                                <h3><a href="http://www.nhaccuatui.com/video/ngay-em-xa-que-vong-eo-56-ost-thuy-chi.B2pBC4Ul51OzD.html" class="name_song" title="Ngày Em Xa Quê (Vòng Eo 56 OST) - Thùy Chi">Ngày em xa quê </a></h3>
+                                <h4><a href="http://www.nhaccuatui.com/nghe-si-thuy-chi.html" class="name_singer" title="Tìm các bài hát, playlist, mv do ca sĩ Thùy Chi trình bày" target="_blank">Thùy Chi</a></h4>
+                            </li>
+                            
+                            <li>
+                                <div class="box_absolute">                    		
+                                    <a href="http://www.nhaccuatui.com/video/sao-phai-phuc-tap-trong-hieu-idol-ft-karik.xsXzWKvjpxahs.html" class="img"><span class="view_mv"><span class="icon_view"></span><span id="NCTCounter_sg_4418293" wgct="1">40.198</span></span>
+                                        <span class="icon_play"></span>
+                                        <img src="http://avatar.nct.nixcdn.com/mv/2016/04/26/2/d/9/4/1461666064016_640.jpg" data-src="http://avatar.nct.nixcdn.com/mv/2016/04/26/2/d/9/4/1461666064016_640.jpg">
+                                    </a>
+                                    <span class="icon_time_video">03:56</span>
+                                </div>
+                                <h3><a href="http://www.nhaccuatui.com/video/sao-phai-phuc-tap-trong-hieu-idol-ft-karik.xsXzWKvjpxahs.html" class="name_song" title="Sao Phải Phức Tạp - Trọng Hiếu Idol, Karik">Sao phải phức tạp</a></h3>
+                                <h4><a href="http://www.nhaccuatui.com/nghe-si-trong-hieu-idol.html" class="name_singer" title="Tìm các bài hát, playlist, mv do ca sĩ Trọng Hiếu Idol trình bày" target="_blank">Trọng Hiếu Idol, </a> <a href="http://www.nhaccuatui.com/nghe-si-karik.html" class="name_singer" title="Tìm các bài hát, playlist, mv do ca sĩ Karik trình bày" target="_blank">Karik</a></h4>
+                            </li>
+                            
+                        </div>
+                    </div>    
+                </div>
+
+                <!--ket thuc list video--> 
+                <div class="list_video">
+                    <div class="fram_select">
+                      <div class="tile_box_key">            
+                        <h2 class="title_of_box_video"><a title="Video Thiếu Nhi" href="#">Video Thiếu Nhi ></a></h2>
+                        </div><!--@end div tile_box_key-->                
+                        <div class="video_list">
+                            
+                            <li>
+                                <div class="box_absolute">                    		
+                                    <a href="http://www.nhaccuatui.com/video/cause-i-love-you-noo-phuoc-thinh.V42OO50HHWD2U.html" class="img">
+                                    <span class="view_mv">
+                                    <span class="icon_view"></span><span id="NCTCounter_sg_4419843" wgct="1">310.445</span></span>
+                                        <span class="icon_play"></span>
+                                        <img src="http://avatar.nct.nixcdn.com/mv/2016/04/28/f/f/e/b/1461816372987_640.jpg" data-src="http://avatar.nct.nixcdn.com/mv/2016/04/28/f/f/e/b/1461816372987_640.jpg">
+                                    </a>
+                                    <span class="icon_time_video">06:11</span>
+                                </div>
+                                <h3><a href="http://www.nhaccuatui.com/video/cause-i-love-you-noo-phuoc-thinh.V42OO50HHWD2U.html" class="name_song" title="Cause I Love You - Noo Phước Thịnh">Cause i love you</a></h3>
+                                <h4><a href="http://www.nhaccuatui.com/nghe-si-noo-phuoc-thinh.html" class="name_singer" title="Tìm các bài hát, playlist, mv do ca sĩ Noo Phước Thịnh trình bày" target="_blank">Noo Phước Thịnh</a></h4>
+                            </li>
+                            
+                            <li>
+                                <div class="box_absolute">                    		
+                                    <a href="http://www.nhaccuatui.com/video/hay-tra-lai-anh-minh-vuong-m4u.DqLz4IGtbYuYk.html" class="img"><span class="view_mv"><span class="icon_view"></span><span id="NCTCounter_sg_4417228" wgct="1">184.732</span></span>
+                                        <span class="icon_play"></span>
+                                        <img src="http://avatar.nct.nixcdn.com/mv/2016/04/26/2/d/9/4/1461635431489_640.jpg" data-src="http://avatar.nct.nixcdn.com/mv/2016/04/26/2/d/9/4/1461635431489_640.jpg">
+                                    </a>
+                                    <span class="icon_time_video">07:04</span>
+                                </div>
+                                <h3><a href="http://www.nhaccuatui.com/video/hay-tra-lai-anh-minh-vuong-m4u.DqLz4IGtbYuYk.html" class="name_song" title="Hãy Trả Lại Anh - Minh Vương M4U">Hãy trả lại anh</a></h3>
+                                <h4><a href="http://www.nhaccuatui.com/nghe-si-minh-vuong-m4u.html" class="name_singer" title="Tìm các bài hát, playlist, mv do ca sĩ Minh Vương M4U trình bày" target="_blank">Minh Vương M4U</a></h4>
+                            </li>
+                            
+                            <li>
+                                <div class="box_absolute">                    		
+                                    <a href="http://www.nhaccuatui.com/video/em-cu-di-di-khac-viet.MJ5yQDapxNZmJ.html" class="img"><span class="view_mv"><span class="icon_view"></span><span id="NCTCounter_sg_4414470" wgct="1">166.360</span></span>
+                                        <span class="icon_play"></span>
+                                        <img src="http://avatar.nct.nixcdn.com/mv/2016/05/01/3/c/7/e/1462112399682_640.jpg" data-src="http://avatar.nct.nixcdn.com/mv/2016/05/01/3/c/7/e/1462112399682_640.jpg">
+                                    </a>
+                                    <span class="icon_time_video">06:48</span>
+                                </div>
+                                <h3><a href="http://www.nhaccuatui.com/video/em-cu-di-di-khac-viet.MJ5yQDapxNZmJ.html" class="name_song" title="Em Cứ Đi Đi - Khắc Việt">Em cứ đi đi</a></h3>
+                                <h4><a href="http://www.nhaccuatui.com/nghe-si-khac-viet.html" class="name_singer" title="Tìm các bài hát, playlist, mv do ca sĩ Khắc Việt trình bày" target="_blank">Khắc Việt</a></h4>
+                            </li>
+                            
+                            <li>
+                                <div class="box_absolute">                    		
+                                    <a href="http://www.nhaccuatui.com/video/say-it-what-are-you-doing-cover-hau-due-mat-troi-ost-nam-cuong-ft-jis.bovzHVVqFZgoM.html" class="img"><span class="view_mv"><span class="icon_view"></span><span id="NCTCounter_sg_4418239" wgct="1">83.097</span></span>
+                                        <span class="icon_play"></span>
+                                        <img src="http://avatar.nct.nixcdn.com/mv/2016/04/26/2/d/9/4/1461659712872_640.jpg" data-src="http://avatar.nct.nixcdn.com/mv/2016/04/26/2/d/9/4/1461659712872_640.jpg">
+                                    </a>
+                                    <span class="icon_time_video">03:36</span>
+                                </div>
+                                <h3><a href="http://www.nhaccuatui.com/video/say-it-what-are-you-doing-cover-hau-due-mat-troi-ost-nam-cuong-ft-jis.bovzHVVqFZgoM.html" class="name_song" title="Say It! What Are You Doing - Nam Cường, Jis">Say it! What are you doing</a></h3>
+                                <h4><a href="http://www.nhaccuatui.com/nghe-si-nam-cuong.html" class="name_singer" title="Tìm các bài hát, playlist, mv do ca sĩ Nam Cường trình bày" target="_blank">Nam Cường, </a> <a href="http://www.nhaccuatui.com/tim-kiem?q=Jis&amp;b=singer" class="name_singer" title="Tìm các bài hát, playlist, mv do ca sĩ Jis trình bày" target="_blank">Jis</a></h4>
+                            </li>
+                            
+                            <li>
+                                <div class="box_absolute">                    		
+                                    <a href="http://www.nhaccuatui.com/video/me-anh-nhac-em-trung-tu.6HCjglqjv3oZ3.html" class="img"><span class="view_mv"><span class="icon_view"></span><span id="NCTCounter_sg_4429279" wgct="1">2.531</span></span>
+                                        <span class="icon_play"></span>
+                                        <img src="http://avatar.nct.nixcdn.com/mv/2016/05/04/5/b/7/e/1462325816593_640.jpg" data-src="http://avatar.nct.nixcdn.com/mv/2016/05/04/5/b/7/e/1462325816593_640.jpg">
+                                    </a>
+                                    <span class="icon_time_video">04:39</span>
+                              </div>
+                                <h3><a href="http://www.nhaccuatui.com/video/me-anh-nhac-em-trung-tu.6HCjglqjv3oZ3.html" class="name_song" title="Mẹ Anh Nhắc Em - Trung Tự">Mẹ anh nhắc em</a></h3>
+                                <h4><a href="http://www.nhaccuatui.com/tim-kiem?q=Trung+T%E1%BB%B1&amp;b=singer" class="name_singer" title="Tìm các bài hát, playlist, mv do ca sĩ Trung Tự trình bày" target="_blank">Trung Tự</a></h4>
+                            </li>
+                            
+                            <li>
+                                <div class="box_absolute">                    		
+                                    <a href="http://www.nhaccuatui.com/video/im-lang-va-ra-di-ca-ra-o-ke-khanh-phuong-ft-anh-quan-idol-ft-ca-de-dai.qo0lsxFXrZcu0.html" class="img"><span class="view_mv"><span class="icon_view"></span><span id="NCTCounter_sg_4429709" wgct="1">112</span></span>
+                                        <span class="icon_play"></span>
+                                        <img src="http://avatar.nct.nixcdn.com/mv/2016/05/04/5/b/7/e/1462337942339_640.jpg" data-src="http://avatar.nct.nixcdn.com/mv/2016/05/04/5/b/7/e/1462337942339_640.jpg">
+                                    </a>
+                                    <span class="icon_time_video">04:30</span>
+                                </div>
+                                <h3><a href="http://www.nhaccuatui.com/video/im-lang-va-ra-di-ca-ra-o-ke-khanh-phuong-ft-anh-quan-idol-ft-ca-de-dai.qo0lsxFXrZcu0.html" class="name_song" title="Im Lặng Và Ra Đi (Cà Ra Ô Kê) - Khánh Phương, Anh Quân Idol, Cà Dễ Dãi">Im lặng và ra đi</a></h3>
+                                <h4><a href="http://www.nhaccuatui.com/nghe-si-khanh-phuong.html" class="name_singer" title="Tìm các bài hát, playlist, mv do ca sĩ Khánh Phương trình bày" target="_blank">Khánh Phương, </a> <a href="http://www.nhaccuatui.com/nghe-si-anh-quan-idol.html" class="name_singer" title="Tìm các bài hát, playlist, mv do ca sĩ Anh Quân Idol trình bày" target="_blank">Anh Quân Idol, </a> <a href="http://www.nhaccuatui.com/nghe-si-cadedai.html" class="name_singer" title="Tìm các bài hát, playlist, mv do ca sĩ Cà Dễ Dãi trình bày" target="_blank">Cà Dễ Dãi</a></h4>
+                            </li>
+                            
+                            <li>
+                                <div class="box_absolute">                    		
+                                    <a href="http://www.nhaccuatui.com/video/ngay-em-xa-que-vong-eo-56-ost-thuy-chi.B2pBC4Ul51OzD.html" class="img"><span class="view_mv"><span class="icon_view"></span><span id="NCTCounter_sg_4396936" wgct="1">247.428</span></span>
+                                        <span class="icon_play"></span>
+                                        <img src="http://avatar.nct.nixcdn.com/mv/2016/04/15/0/1/4/8/1460705880446_640.jpg" data-src="http://avatar.nct.nixcdn.com/mv/2016/04/15/0/1/4/8/1460705880446_640.jpg">
+                                    </a>
+                                    <span class="icon_time_video">03:47</span>
+                                </div>
+                                <h3><a href="http://www.nhaccuatui.com/video/ngay-em-xa-que-vong-eo-56-ost-thuy-chi.B2pBC4Ul51OzD.html" class="name_song" title="Ngày Em Xa Quê (Vòng Eo 56 OST) - Thùy Chi">Ngày em xa quê</a></h3>
+                                <h4><a href="http://www.nhaccuatui.com/nghe-si-thuy-chi.html" class="name_singer" title="Tìm các bài hát, playlist, mv do ca sĩ Thùy Chi trình bày" target="_blank">Thùy Chi</a></h4>
+                            </li>
+                            
+                            <li>
+                                <div class="box_absolute">                    		
+                                    <a href="http://www.nhaccuatui.com/video/sao-phai-phuc-tap-trong-hieu-idol-ft-karik.xsXzWKvjpxahs.html" class="img"><span class="view_mv"><span class="icon_view"></span><span id="NCTCounter_sg_4418293" wgct="1">40.198</span></span>
+                                        <span class="icon_play"></span>
+                                        <img src="http://avatar.nct.nixcdn.com/mv/2016/04/26/2/d/9/4/1461666064016_640.jpg" data-src="http://avatar.nct.nixcdn.com/mv/2016/04/26/2/d/9/4/1461666064016_640.jpg">
+                                    </a>
+                                    <span class="icon_time_video">03:56</span>
+                                </div>
+                                <h3><a href="http://www.nhaccuatui.com/video/sao-phai-phuc-tap-trong-hieu-idol-ft-karik.xsXzWKvjpxahs.html" class="name_song" title="Sao Phải Phức Tạp - Trọng Hiếu Idol, Karik">Sao phải phức tạp</a></h3>
+                                <h4><a href="http://www.nhaccuatui.com/nghe-si-trong-hieu-idol.html" class="name_singer" title="Tìm các bài hát, playlist, mv do ca sĩ Trọng Hiếu Idol trình bày" target="_blank">Trọng Hiếu Idol, </a> <a href="http://www.nhaccuatui.com/nghe-si-karik.html" class="name_singer" title="Tìm các bài hát, playlist, mv do ca sĩ Karik trình bày" target="_blank">Karik</a></h4>
+                            </li>
+                            
+                        </div>
+                    </div>    
+                </div>
+
+                <!--ket thuc list video-->
+                 <div class="list_video">
+                    <div class="fram_select">
+                      <div class="tile_box_key">            
+                        <h2 class="title_of_box_video"><a title="Video Rap Việt" href="#">Video Rap Việt ></a></h2>
+                        </div><!--@end div tile_box_key-->                
+                        <div class="video_list">
+                            
+                            <li>
+                                <div class="box_absolute">                    		
+                                    <a href="http://www.nhaccuatui.com/video/cause-i-love-you-noo-phuoc-thinh.V42OO50HHWD2U.html" class="img">
+                                    <span class="view_mv">
+                                    <span class="icon_view"></span><span id="NCTCounter_sg_4419843" wgct="1">310.445</span></span>
+                                        <span class="icon_play"></span>
+                                        <img src="http://avatar.nct.nixcdn.com/mv/2016/04/28/f/f/e/b/1461816372987_640.jpg" data-src="http://avatar.nct.nixcdn.com/mv/2016/04/28/f/f/e/b/1461816372987_640.jpg">
+                                    </a>
+                                    <span class="icon_time_video">06:11</span>
+                                </div>
+                                <h3><a href="http://www.nhaccuatui.com/video/cause-i-love-you-noo-phuoc-thinh.V42OO50HHWD2U.html" class="name_song" title="Cause I Love You - Noo Phước Thịnh">Cause i love you</a></h3>
+                                <h4><a href="http://www.nhaccuatui.com/nghe-si-noo-phuoc-thinh.html" class="name_singer" title="Tìm các bài hát, playlist, mv do ca sĩ Noo Phước Thịnh trình bày" target="_blank">Noo Phước Thịnh</a></h4>
+                            </li>
+                            
+                            <li>
+                                <div class="box_absolute">                    		
+                                    <a href="http://www.nhaccuatui.com/video/hay-tra-lai-anh-minh-vuong-m4u.DqLz4IGtbYuYk.html" class="img"><span class="view_mv"><span class="icon_view"></span><span id="NCTCounter_sg_4417228" wgct="1">184.732</span></span>
+                                        <span class="icon_play"></span>
+                                        <img src="http://avatar.nct.nixcdn.com/mv/2016/04/26/2/d/9/4/1461635431489_640.jpg" data-src="http://avatar.nct.nixcdn.com/mv/2016/04/26/2/d/9/4/1461635431489_640.jpg">
+                                    </a>
+                                    <span class="icon_time_video">07:04</span>
+                                </div>
+                                <h3><a href="http://www.nhaccuatui.com/video/hay-tra-lai-anh-minh-vuong-m4u.DqLz4IGtbYuYk.html" class="name_song" title="Hãy Trả Lại Anh - Minh Vương M4U">Hãy trả lại anh</a></h3>
+                                <h4><a href="http://www.nhaccuatui.com/nghe-si-minh-vuong-m4u.html" class="name_singer" title="Tìm các bài hát, playlist, mv do ca sĩ Minh Vương M4U trình bày" target="_blank">Minh Vương M4U</a></h4>
+                            </li>
+                            
+                            <li>
+                                <div class="box_absolute">                    		
+                                    <a href="http://www.nhaccuatui.com/video/em-cu-di-di-khac-viet.MJ5yQDapxNZmJ.html" class="img"><span class="view_mv"><span class="icon_view"></span><span id="NCTCounter_sg_4414470" wgct="1">166.360</span></span>
+                                        <span class="icon_play"></span>
+                                        <img src="http://avatar.nct.nixcdn.com/mv/2016/05/01/3/c/7/e/1462112399682_640.jpg" data-src="http://avatar.nct.nixcdn.com/mv/2016/05/01/3/c/7/e/1462112399682_640.jpg">
+                                    </a>
+                                    <span class="icon_time_video">06:48</span>
+                                </div>
+                                <h3><a href="http://www.nhaccuatui.com/video/em-cu-di-di-khac-viet.MJ5yQDapxNZmJ.html" class="name_song" title="Em Cứ Đi Đi - Khắc Việt">Em cứ đi đi</a></h3>
+                                <h4><a href="http://www.nhaccuatui.com/nghe-si-khac-viet.html" class="name_singer" title="Tìm các bài hát, playlist, mv do ca sĩ Khắc Việt trình bày" target="_blank">Khắc Việt</a></h4>
+                            </li>
+                            
+                            <li>
+                                <div class="box_absolute">                    		
+                                    <a href="http://www.nhaccuatui.com/video/say-it-what-are-you-doing-cover-hau-due-mat-troi-ost-nam-cuong-ft-jis.bovzHVVqFZgoM.html" class="img"><span class="view_mv"><span class="icon_view"></span><span id="NCTCounter_sg_4418239" wgct="1">83.097</span></span>
+                                        <span class="icon_play"></span>
+                                        <img src="http://avatar.nct.nixcdn.com/mv/2016/04/26/2/d/9/4/1461659712872_640.jpg" data-src="http://avatar.nct.nixcdn.com/mv/2016/04/26/2/d/9/4/1461659712872_640.jpg">
+                                    </a>
+                                    <span class="icon_time_video">03:36</span>
+                                </div>
+                                <h3><a href="http://www.nhaccuatui.com/video/say-it-what-are-you-doing-cover-hau-due-mat-troi-ost-nam-cuong-ft-jis.bovzHVVqFZgoM.html" class="name_song" title="Say It! What Are You Doing - Nam Cường, Jis">Say it! What are you doing</a></h3>
+                                <h4><a href="http://www.nhaccuatui.com/nghe-si-nam-cuong.html" class="name_singer" title="Tìm các bài hát, playlist, mv do ca sĩ Nam Cường trình bày" target="_blank">Nam Cường, </a> <a href="http://www.nhaccuatui.com/tim-kiem?q=Jis&amp;b=singer" class="name_singer" title="Tìm các bài hát, playlist, mv do ca sĩ Jis trình bày" target="_blank">Jis</a></h4>
+                            </li>
+                            
+                            <li>
+                                <div class="box_absolute">                    		
+                                    <a href="http://www.nhaccuatui.com/video/me-anh-nhac-em-trung-tu.6HCjglqjv3oZ3.html" class="img"><span class="view_mv"><span class="icon_view"></span><span id="NCTCounter_sg_4429279" wgct="1">2.531</span></span>
+                                        <span class="icon_play"></span>
+                                        <img src="http://avatar.nct.nixcdn.com/mv/2016/05/04/5/b/7/e/1462325816593_640.jpg" data-src="http://avatar.nct.nixcdn.com/mv/2016/05/04/5/b/7/e/1462325816593_640.jpg">
+                                    </a>
+                                    <span class="icon_time_video">04:39</span>
+                              </div>
+                                <h3><a href="http://www.nhaccuatui.com/video/me-anh-nhac-em-trung-tu.6HCjglqjv3oZ3.html" class="name_song" title="Mẹ Anh Nhắc Em - Trung Tự">Mẹ anh nhắc em</a></h3>
+                                <h4><a href="http://www.nhaccuatui.com/tim-kiem?q=Trung+T%E1%BB%B1&amp;b=singer" class="name_singer" title="Tìm các bài hát, playlist, mv do ca sĩ Trung Tự trình bày" target="_blank">Trung Tự</a></h4>
+                            </li>
+                            
+                            <li>
+                                <div class="box_absolute">                    		
+                                    <a href="http://www.nhaccuatui.com/video/im-lang-va-ra-di-ca-ra-o-ke-khanh-phuong-ft-anh-quan-idol-ft-ca-de-dai.qo0lsxFXrZcu0.html" class="img"><span class="view_mv"><span class="icon_view"></span><span id="NCTCounter_sg_4429709" wgct="1">112</span></span>
+                                        <span class="icon_play"></span>
+                                        <img src="http://avatar.nct.nixcdn.com/mv/2016/05/04/5/b/7/e/1462337942339_640.jpg" data-src="http://avatar.nct.nixcdn.com/mv/2016/05/04/5/b/7/e/1462337942339_640.jpg">
+                                    </a>
+                                    <span class="icon_time_video">04:30</span>
+                                </div>
+                                <h3><a href="http://www.nhaccuatui.com/video/im-lang-va-ra-di-ca-ra-o-ke-khanh-phuong-ft-anh-quan-idol-ft-ca-de-dai.qo0lsxFXrZcu0.html" class="name_song" title="Im Lặng Và Ra Đi (Cà Ra Ô Kê) - Khánh Phương, Anh Quân Idol, Cà Dễ Dãi">Im lặng và ra đi</a></h3>
+                                <h4><a href="http://www.nhaccuatui.com/nghe-si-khanh-phuong.html" class="name_singer" title="Tìm các bài hát, playlist, mv do ca sĩ Khánh Phương trình bày" target="_blank">Khánh Phương, </a> <a href="http://www.nhaccuatui.com/nghe-si-anh-quan-idol.html" class="name_singer" title="Tìm các bài hát, playlist, mv do ca sĩ Anh Quân Idol trình bày" target="_blank">Anh Quân Idol, </a> <a href="http://www.nhaccuatui.com/nghe-si-cadedai.html" class="name_singer" title="Tìm các bài hát, playlist, mv do ca sĩ Cà Dễ Dãi trình bày" target="_blank">Cà Dễ Dãi</a></h4>
+                            </li>
+                            
+                            <li>
+                                <div class="box_absolute">                    		
+                                    <a href="http://www.nhaccuatui.com/video/ngay-em-xa-que-vong-eo-56-ost-thuy-chi.B2pBC4Ul51OzD.html" class="img"><span class="view_mv"><span class="icon_view"></span><span id="NCTCounter_sg_4396936" wgct="1">247.428</span></span>
+                                        <span class="icon_play"></span>
+                                        <img src="http://avatar.nct.nixcdn.com/mv/2016/04/15/0/1/4/8/1460705880446_640.jpg" data-src="http://avatar.nct.nixcdn.com/mv/2016/04/15/0/1/4/8/1460705880446_640.jpg">
+                                    </a>
+                                    <span class="icon_time_video">03:47</span>
+                                </div>
+                                <h3><a href="http://www.nhaccuatui.com/video/ngay-em-xa-que-vong-eo-56-ost-thuy-chi.B2pBC4Ul51OzD.html" class="name_song" title="Ngày Em Xa Quê (Vòng Eo 56 OST) - Thùy Chi">Ngày em xa quê</a></h3>
+                                <h4><a href="http://www.nhaccuatui.com/nghe-si-thuy-chi.html" class="name_singer" title="Tìm các bài hát, playlist, mv do ca sĩ Thùy Chi trình bày" target="_blank">Thùy Chi</a></h4>
+                            </li>
+                            
+                            <li>
+                                <div class="box_absolute">                    		
+                                    <a href="http://www.nhaccuatui.com/video/sao-phai-phuc-tap-trong-hieu-idol-ft-karik.xsXzWKvjpxahs.html" class="img"><span class="view_mv"><span class="icon_view"></span><span id="NCTCounter_sg_4418293" wgct="1">40.198</span></span>
+                                        <span class="icon_play"></span>
+                                        <img src="http://avatar.nct.nixcdn.com/mv/2016/04/26/2/d/9/4/1461666064016_640.jpg" data-src="http://avatar.nct.nixcdn.com/mv/2016/04/26/2/d/9/4/1461666064016_640.jpg">
+                                    </a>
+                                    <span class="icon_time_video">03:56</span>
+                                </div>
+                                <h3><a href="http://www.nhaccuatui.com/video/sao-phai-phuc-tap-trong-hieu-idol-ft-karik.xsXzWKvjpxahs.html" class="name_song" title="Sao Phải Phức Tạp - Trọng Hiếu Idol, Karik">Sao phải phức tạp</a></h3>
+                                <h4><a href="http://www.nhaccuatui.com/nghe-si-trong-hieu-idol.html" class="name_singer" title="Tìm các bài hát, playlist, mv do ca sĩ Trọng Hiếu Idol trình bày" target="_blank">Trọng Hiếu Idol, </a> <a href="http://www.nhaccuatui.com/nghe-si-karik.html" class="name_singer" title="Tìm các bài hát, playlist, mv do ca sĩ Karik trình bày" target="_blank">Karik</a></h4>
+                            </li>
+                            
+                        </div>
+                    </div>    
+                </div>
+
+                <!--ket thuc list video-->
+			</div>
+<!-- ket thuc content-->
+
+		</div>
+       <!-- Footer -->
+        <div class="footer">
+        	<div class="foot1">
+            	
+            </div>
+            <div class="address">
+            	<div class="infor">
+                	<h2>Công ty TNHH Âm nhạc Bốn Thành Viên</h2>
+                    <p>Giấy CNĐKDN: 0308808576 - Ngày cấp: 16/10/2015, được sửa đổi lần thứ 15 ngày 16/11/2015. Cơ quan cấp: Phòng Đăng ký kinh doanh Sở Kế hoạch và Đầu tư TPHCM.</p>
+                    <p>Địa chỉ: Tầng trệt, Tòa nhà TroSV, số 9 P.Linh Trung, Q.Thủ Đức, TP.Hồ Chí Minh.</p>
+                    <p>Số điện thoại: 01629 286 679</p>
+                </div>
+                <div class="phone">
+                	<img src="Images/Blinklist-2-32.png" />
+                	<div class="note">
+                    	Gop y phan anh <br />
+                        <span>02346 467 110</span>
+                    </div>
+                    <div class="call">
+                    	Tu van mien phi <br />
+                        <span>0974 445 667</span>
+                    </div>
+                     <br />
+                    <div class="mail">
+                    	<p>Email: <a title="email">vuiqualavui@yahoo.com</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer : End-->
+    <script type="text/javascript">
+var TabbedPanels1 = new Spry.Widget.TabbedPanels("TabbedPanels1");
+</script>
+</body>
+</html>
